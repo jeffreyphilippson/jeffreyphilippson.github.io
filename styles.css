@@ -1,0 +1,223 @@
+/*********************
+* General formatting *
+*********************/
+
+p {
+font-size:16 !important;
+font-size:16;
+margin-top:16 !important;
+margin-top:12;
+margin-bottom:16 !important;
+margin-bottom:12;
+}
+
+p#headings {
+font-size:20 !important;
+font-size:20;
+}
+
+td {
+font-size:16 !important;
+font-size:16;
+}
+
+a {
+text-decoration:none;
+color:#0000FF;
+font-size:16 !important;
+font-size:16;
+}
+
+a:hover {
+text-decoration:underline;
+color:#0000FF;
+}
+
+/*************************
+* Banner, navigation box *
+*************************/
+
+td#banner {
+font-size:20 !important;
+font-size:20;
+padding:20;
+}
+
+td#banner div {
+font-size:20 !important;
+font-size:20;
+width:400;
+text-align:center;
+background:#485E49;
+padding:10;
+color:#EEE;
+}
+
+td#list-nav {
+width:220 !important;
+width:220;
+}
+
+td#list-nav ul {
+list-style:none;
+margin:3px;
+padding:0;
+width:157px
+font-size:16 !important;
+font-size:16;
+}
+
+td#list-nav ul li a {
+text-decoration:none;
+padding:10 15;
+width:145px !important;
+width:175px;
+background:#485e49;
+color:#eee;
+float:left;
+margin:1;
+text-align:left;
+border-left:1px solid #fff;
+font-size:16 !important;
+font-size:16;
+}
+
+td#list-nav ul li a:hover {
+background:#a2b3a1;
+color:#000
+}	 
+
+/*************************
+* General content tables *
+*************************/
+
+table#contenttable {
+font-size:16;
+width:80%;
+margin-left:30px;
+border:solid 1px gray;
+border-collapse:collapse;
+}
+
+#contenttable tr {
+vertical-align:top;
+}
+
+#contenttable tr td {
+border:solid 1px gray;
+padding:5px;
+}
+
+/*****************
+* Table of links *
+*****************/
+
+table#linkstable {
+width:80%;
+margin-left:30px !important;
+margin-left:0px;
+border-collapse:collapse;
+border:4px solid black;
+}
+
+#linkstable tr {
+height:32;
+vertical-align:top;
+}
+
+#linkstable tr td {
+border-left:4px solid black;
+border-top:4px solid black;
+padding-left:10px;
+padding-top:0px !important;
+padding-top:10px;
+padding-bottom:0px !important;
+padding-bottom:10px;
+}
+
+/************************
+* Resume skills summary *
+************************/
+
+table#skillssummarytable {
+border:1px solid gray;
+border-collapse:collapse;
+cellpadding:5px;
+width:80% !important;
+width:55%;
+margin-left:auto !important;
+margin-left:80px;
+margin-right:auto;
+}
+
+td#skillssummary {
+border-collapse:collapse;
+border-left:1px solid gray;
+border-top:1px solid gray;
+}
+
+/**********************
+* TeX and LaTeX logos *
+**********************/
+
+.tex sub, .latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.tex sub, .latex sub, .latex sup {
+  text-transform: uppercase;
+}
+
+.tex, .latex, .tex sub, .latex sub {
+  font-size: 1em;
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+/**************
+* Other stuff *
+**************/
+
+img#portrait {
+width:150 !important;
+width:150;
+float:right; padding-left:30;
+}
+
+p#caption {
+font-size:12 !important;
+font-size:9;
+}
+
+#caption a {
+text-decoration:none;
+color:#0000FF;
+font-size:12 !important;
+font-size:9;
+}
+
+#caption a:hover {
+text-decoration:underline;
+color:#0000FF;
+}
+
+p#thesis_title {
+font-size:18 !important;
+font-size:15;
+margin-left:30px;
+}
+
+td#copyright {
+padding-top:20px;
+padding-left:0px;
+font-size:13 !important;
+font-size:13;
+font-weight:700;
+}

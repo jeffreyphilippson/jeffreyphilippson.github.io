@@ -1,0 +1,322 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="icon" href="favicon.ico">
+<title>Homepage of Jeffrey Philippson</title>
+</head>
+
+<body>
+<table width="100%">
+<tr align="center">
+<td id="banner"><div>Jeffrey's Musings</div></td>
+</tr>
+<tr align="center">
+<td>
+
+<table width="100%" border="0">
+<tr valign="top">
+<td id="list-nav" width="220">
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="bio.html">Bio</a></li>
+<li><a href="research.html">Graduate Research</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="theses.html">Academic Theses</a></li>
+<li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+<li><a style="background:#a2b3a1;color:#000">Musings</a></li>
+<li><a href="software.html">Software</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="Contact.html">Contact</a></li>
+</ul>
+
+</td>
+
+<td style="text-align:top">
+
+<script language="javascript">
+  function toggleDiv(divid){
+    if(document.getElementById(divid).style.display == 'none'){
+      document.getElementById(divid).style.display = 'block';
+    }else{
+      document.getElementById(divid).style.display = 'none';
+    }
+  }
+</script>
+
+<table width="100%">
+<tr><td>
+
+<p id="inline">
+Many years ago at a music festival in the Netherlands I was with friends dancing in a very large tent bemoaning the unsatisfactorily low volume for the space we were in. There was, of course, a lot of background noise both from the music and the crowd, and we were really quite far from the stage. In a moment of frustration, or perhaps unfettered optimism, a friend of mine cried out for change, shouting: "<b><i>harder!!!</i></b>"
+</p>
+
+<p id="inline">
+Just by chance this exclamation happened to coincide with a momentary lull in our immediate vicinity and a number of people around us, who clearly agreed with the sentiment, took up the call. Within a short space of time this noble rallying cry had spread across the space to the point that the MC on stage heard and added his own voice to the chorus, exclaiming: "Mr DJ! Can we get some more volume?" This story illustrates the important point that with a clear message and a bit of luck, a lone voice can start a revolution.
+</p>
+
+<p id="inline">
+This page is my attempt to get some ideas that have been bouncing around in my head out into the public forum. Perhaps, with a bit of luck, they can get people talking and ultimately change the world for the better. If you have any questions or comments about the musings below then I'd love to <a href="contact.html">hear from you</a>. If you maintain a website and find any of the musings interesting please think about linking to this page to increase it's visibility.
+</p>
+
+<p id="inline">
+All views expressed are my own and in no way reflect the policies or views of any organisation I am currently or have formerly been affilliated with.
+</p>
+
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:10px">
+
+<a href="javascript:;" onmousedown="toggleDiv('on_elections');">On Elections</a>
+<br/>
+<div id="on_elections" style="display:none">
+
+<p><font size="4"><u>The Custom Vote: Democracy Comes of Age</u></font></p>
+
+<p id="inline">
+I recall back in May of 2005, as the UK was in the aftermath of Tony Blair's third and final election victory, watching an interview in which the interviewee attempted to disect the message that the electorate was trying to send with their votes. This included statements such as (paraphrasing), "Labour's significantly reduced majority is a statement of the country's dissatisfaction with Tony Blair's handling of the lead-up to the Iraq War", and, "the Conservatives' failure to significantly increase their share of the vote demonstrates that the electorate still don't see them as a credible alternative to Labour".
+</p>
+
+<p id="inline">
+I remember thinking at the time that it seemed strange to ascribe these detailed views to an electorate given that the only information each voter can provide is an '<i>X</i> in the box' next to a particular candidate of a particular party. I'm not complaining about generalisations: clearly the electorate do not have a single view on any topic, but nontheless one can make useful general statements about the 'views of the electorate'. No, I'm interested in how one makes the jump from statistics about changes in the popular vote and seat allocations for each party to the details of which specific policies or actions drove voters to make the decisions that they did.
+</p>
+
+<p id="inline">
+All this got me thinking about how one could design a voting system that allowed the voters to provide more information about what they really want. Clearly this couldn't involve each voter submitting an essay, or indeed any qualitative information; the numbers are just too large to permit any meaningful interpretation of such information. Any additional information must be provided in a manner that is amenable to statistical analysis, and crucially must be sufficiently reliable that it can be allowed to influence decisions made in running the country.
+</p>
+
+<p id="inline">
+An ideal voting system would have all of the following characteristics:
+</p>
+
+<ol>
+<li>Simplicity - a significant majority of the country must be convinced that they can understand the system</li>
+<li>Security - any system must be seen to be virtually impossible to manipulate</li>
+<li>Reliability - the voters must feel confident that the information they provide will be faithfully recorded</li>
+<li>Speed - people don't like waiting for their election results</li>
+<li>High information content - let's find out what people really think</li>
+<li>High turnout - I'm not someone who thinks that low turnout invalidates electoral results, but it is clearly not desirable</li>
+<li>Make tactical voting unnecessary - people rightly dislike the idea of tactical voting and want to cast their vote for the best candidate</li>
+</ol>
+
+<p id="inline">
+I would now like to describe a novel voting system that I believe would score highly on many of these criteria. There are many aspects of the system to discuss but the primary innovation is giving voters the ability to divide their single vote among the candidates in any way they choose, including making the fraction given to any one candidate either positive or negative. Negative fractional votes would subtract the given amount from the candidate's vote tally.
+</p>
+
+<p id="inline">
+The system I envisage would have to be implemented as an electronic voting scheme and would allow the voter to assign an arbitrary number of nominal 'votes' to each candidate, with the actual numbers being scaled such that sum of all the absolute values is normalised to unity. This approach would allow the voters to use whatever numbers they felt comfortable with and would not require any mental arithmetic. A graphic illustration of the vote, such as a pie chart, would appear in real-time as the numbers were awarded to each candidate.
+</p>
+
+<p id="inline">
+Once a voter was happy with the distribution of their vote they would confirm their assent and obtain a printed slip recording the details of their choices. On emerging from the polling booth, the voter would post their folded slip in a ballot box in the time-honoured manner.
+</p>
+
+<p id="inline">
+Let's look at how such a system might fare when judged against the criteria listed above:
+</p>
+
+<p id="inline">
+<u>1. Simplicity</u>
+</p>
+
+<p id="inline">
+One of the main arguments used by opponents of voting reform is that people will find any new system too confusing and may become disenfranchised due to their lack of understanding. This rather specious argument was successfully employed to defeat the proposed <a href="http://en.wikipedia.org/wiki/Mixed_member_proportional_representation">mixed-member proportional representation</a> system in <a href="http://en.wikipedia.org/wiki/Ontario_electoral_reform_referendum,_2007">Ontario in 2007</a>, and the instant runoff, <a href="http://en.wikipedia.org/wiki/Alternative_vote">Alternative Vote</a> system in the <a href="http://en.wikipedia.org/wiki/United_Kingdom_Alternative_Vote_referendum,_2011">UK in 2011</a>.
+</p>
+
+<p id="inline">
+A key benefit of the Custom Vote system is its flexibility: a voter who is confused by or simply dislikes the idea of splitting their vote can choose to give their entire vote to a single candidate as in <a href="http://en.wikipedia.org/wiki/First_past_the_post">first-past-the-post</a> and other single vote methods. The familiar single vote approach is retained as a subset of the more flexible system, and should every voter choose to vote that way the system would reduce to a classic single vote method.
+</p>
+
+<p id="inline">
+While a significant fraction of the electorate might choose this approach, I feel it is likely that a similarly large fraction would be comfortable opting for simple alternatives: the voter torn between two good candidates who chooses to split their vote in half, the disenchanted voter who feels unable to support any party but chooses to award a full negative vote to an extremist party they oppose rather than spoil their ballot or neglect their civic responsibilities.
+</p>
+
+
+<p id="inline">
+<u>2. Security</u>
+</p>
+
+<p id="inline">
+One of the main concerns regarding electronic voting systems is the potential for rigging or otherwise interfering with the casting, communicating or counting of votes if the system security is compromised. Of course, these concerns can apply to traditional ballot paper based voting methods too but in that case the interference requires the cooperation of many individuals across different locations and is hence much more challenging to execute without detection.
+</p>
+
+<p id="inline">
+The picture most people have in their heads is that of an individual or group hidden away somewhere, accessing the voting system remotely and uploading their desired set of fraudulent results. This would, of course, be a serious concern for any voting system linked to the internet, as even highly secure networks such as those used by the government, military, and intelligence services are occasionally (or not so occasionally) compromised through attacks by hacker groups.
+</p>
+
+<p id="inline">
+For this reason, electronic voting systems tend to use closed networks with no connection to the internet. Even in the case of closed networks or distributed local systems, malicious code inserted into firmware, or otherwise put in place by someone with access to the units, could potentially compromise the whole system. This is where the backup system known as a <a href="http://en.wikipedia.org/wiki/Voter-verified_paper_audit_trail">Voter-Verified Paper Audit Trail (VVPAT)</a> comes in. Prominant signs remind voters to check that the slip printed by their voting terminal accurately records their intended vote.
+</p>
+
+
+<p id="inline">
+<u>3. Reliability</u>
+</p>
+
+<p id="inline">
+Note in the previous section the explicit reference to the 'intended vote' confirmed on the printed slip for the VVPAT. In addition to the security of a comprehensive paper trail, this backup could be used to give a second chance to voters who are not sure if they entered their voting preferences as intended.
+</p>
+
+
+
+
+<p id="inline">
+<u>4. Speed</u>
+</p>
+
+<p id="inline">
+
+</p>
+
+
+<p id="inline">
+<u>5. High information content</u>
+</p>
+
+<p id="inline">
+One of the key benefits of the Custom Vote system is the ability to provide additional information through the nuanced options available to voters in the polling booth. A portion of the electorate may choose to utilise the full capabilities of the system, for example giving small fractions of their vote to smaller, single issue parties to register their support for that issue, while saving a large fraction for a positive/negative vote for a likely governing party they support/oppose.
+</p>
+
+<p id="inline">
+The Custom Vote would create a political pundit's paradise, with a positive cornucopiea of statistics and analysis. I am slightly hesitant about using this as an argument in favour, as political pundits and punditry are not always viewed in an entirely positive light, however I do see this ultimately as a good thing. You will recall that this musing started with the observation that post-election analysis tends to be based on very little information, even though the concept has broadened since then.
+</p>
+
+<p id="inline">
+So how would this feast of political punditry work? 
+</p>
+
+
+<p id="inline">
+<u>6. High turnout</u>
+</p>
+
+<p id="inline">
+Economists and sociologists have long struggled to explain why people vote. For any poll in which large number of votes are cast, the actions of any individual are irrelevant and were an individual to decide against voting they could be assured that their decision would have no bearing on the outcome. Equally, if the individual does choose to vote, they can be confident that their vote will not swing the outcome.
+</p>
+
+<p id="inline">
+I am often surprised by how reluctant people are to accept this argument. To my mind, the line of reasoning is suffiently clear to merit classification as 'self-evident'. Recognising that the fact that, "if everybody thought like that democracy would cease to function", does not give an incentive from the point of view of the individual.
+</p>
+
+<p id="inline">
+So what, then, is the incentive that drives so many millions around the world to take part in democratic processes? It needn't be too weighty an incentive; after all, the cost to the individual is, in most cases, very small.
+</p>
+
+<p id="inline">
+Not so long ago, I felt I understood the origin of this incentive. An <a href="www.aeaweb.org/annual_mtg_papers/2007/0107_0800_1401.pdf">article by Patricia Funk</a> describing the effects of the introduction of fully postal voting in Switzerland rang true, postulating a description based on social incentives: people vote because other people think they should. Having executed our civic responsibility, we can all feel smug and self-satisfied about it, and perhaps casually bring it up in conversation with our peers.
+</p>
+
+
+
+http://wwz.unibas.ch/fileadmin/wwz/redaktion/wipo/Alois_Stutzer/PostalVoting_accepted_SPSR07.pdf - postal voting increases turnout
+
+
+data security<br/>
+Print out vote - added benefits: experience of dropping slip in ballot box/photo-op for politicians/paper trail/smuggness of being witnessed in the act of voting<br/>
+Compare with other semi-proportional methods<br/>
+
+
+<p id="inline">
+<u>7. Make tactical voting unnecessary</u>
+</p>
+
+
+</div>
+</div>
+
+<!-- ON CLOSE DECISIONS/DO IT! -->
+
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:10px">
+
+<a href="javascript:;" onmousedown="toggleDiv('on_close_decisions');">On Close Decisions</a>
+<br/>
+<div id="on_close_decisions" style="display:none">
+
+<p><font size="4"><u>Do It!</u></font></p>
+
+<p id="inline">
+Once in a while we are all prone to reaching an impasse in the ongoing internal debate that consitutes our concious decision-making process. All too often, the result can be a prolonged bout of fence-sitting, during which nothing is accomplished and occasionally real opportunities pass us by. In such situations it could be useful to have a standardised protocol to follow, allowing some progress to be made even if on some fraction of occasions you will, with the benefit of hindsight, turn out to have made the wrong decision.
+</p>
+
+<p id="inline">
+A common example of this situation occurs when you are considering an action, but are concerned about possible negative consequences. My simple suggested protocol for this situation is: do it! This might seem like typical heartwarming mush (let's all think positive!), but as much as anything it is just a time-saving mechanism. It would be almost as good to always say no; in either case you have removed the need for long-winded evaluations and prevarications. Almost as good, I say... but not quite.
+</p>
+
+<p id="inline">
+What is the origin of the asymmetry? Why choose 'yes' rather than 'no' when sitting on the fence? I'm going out on a limb here as I don't really have any evidence to back this up, but it is my assertion that the human mind tends to exaggerate the negatives in considered evaluations, meaning that in a situation where it seems that the positives and negatives are evenly balanced, it is likely that in fact the positives ought to win the day.
+</p>
+
+<p id="inline">
+This is an approach that I started to implement in my own life about a year ago and thus far I have not had any reason to regret it and, indeed, have invariably ended up wondering why I ever thought there was a problem. I recognise that this in itself is not evidence; to quote the memorable words of Ben Goldacre, "the plural of anecdote is not data". But perhaps this is enough to convince you to give it a try.
+</p>
+
+<p id="inline">
+Having already dreamed up and implemented this concept some while ago, it was very gratifying to find a further reason to support the idea (confirmation bias alert!) in the work of Malcolm Gladwell. I recently read his book Blink (not as good as Outliers but still well worth the read), which posits with some justification that people are rather bad at making concious evaluations of complex decisions. In particular, we have a tendency to weigh up reasons for and against by simply counting them, without any weighting factors, and hence massively overemphasising unimportant aspects of the problem. He uses this idea to push for greater use of instinctive decision making, which I would cautiously support. I'm still not quite clear how to train myself when to go with my instinctive response, without further consideration. </p>
+
+<p id="inline">
+Clearly, once you have got to the stage of fence-sitting, you have already gone beyond the instinctive response stage, and I would suggest that it is difficult if not impossible to go back. Once you have reached this point, putting more time into the evaluation is unlikely to help you reach a 'better' decision. My view is that fence-sitting usually leads to the conservative choice; if that is your preferred approach then stop wasting time on the fence and make that your protocol. For the reason already stated, I am recommending the converse approach.
+</p>
+
+<p id="inline">
+In the spirit of the litigious age we live in, I'm going to end this topic with a disclaimer: 
+</p>
+
+<div style="margin:10px; padding:5px; border:1px solid black">
+I take no responsibility for any decisions you make that lead to undesirable outcomes, whether or not they were based on the application of this principle. It is your responsibility to judge when and in what contexts to use this decion-making process and in the event that it goes wrong, as occasionally it surely will, you are solely responsible for the outcome.
+</div>
+
+</div>
+</div>
+
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:10px">
+
+<a href="javascript:;" onmousedown="toggleDiv('on_scottish_independence');">On Scottish Independence</a>
+<br/>
+<div id="on_scottish_independence" style="display:none">
+
+<p><font size="4"><u>A Big Change</u></font></p>
+
+<p id="inline">
+Having spent many years living abroad in both the Netherlands and Canada, I came to really appreciate running into someone from my homeland, by which I mean the United Kingdom of Great Britain and Northern Ireland. Most people would agree that this is only natural, and should not ??? of the citizens of my respective host nations.
+</p>
+
+
+
+<p id="inline">
+I'm Mancunian. You wouldn't guess it from my accent, but I was born and raised in Manchester and never left for more than two weeks until I was 20. 
+</p>
+
+
+<p id="inline">
+I have lived with Scots, studied with Scots, worked with Scots and partied with Scots and it never felt like 
+</p>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</td></tr>
+<tr>
+<td id="copyright">Copyright &copy; Jeffrey Philippson 2012</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</table>
+
+</body>
+</html>
+
+
+
+
