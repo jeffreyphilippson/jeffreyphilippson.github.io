@@ -1,0 +1,119 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="icon" href="favicon.ico">
+<title>Homepage of Jeffrey Philippson</title>
+</head>
+
+<body>
+<table width="100%">
+<tr align="center">
+<td id="banner"><div>Jeff's physics writing</div></td>
+</tr>
+<tr align="center">
+<td>
+
+<table width="100%" border="0">
+<tr valign="top">
+<td id="list-nav" width="220">
+
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="bio.html">Bio</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a style="background:#a2b3a1;color:#000">Physics</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="contact.html">contact</a></li>
+</ul>
+
+</td>
+
+<td style="text-align:top">
+
+<script language="javascript">
+  function toggleDiv(divid){
+    if(document.getElementById(divid).style.display == 'none'){
+      document.getElementById(divid).style.display = 'block';
+    }else{
+      document.getElementById(divid).style.display = 'none';
+    }
+  }
+</script>
+
+<table width="100%">
+
+<tr><td>
+<p id="inline">
+
+</p>
+</td></tr>
+
+
+
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:10px">
+
+<a href="javascript:;" onmousedown="toggleDiv('on_close_decisions');"> Why are electromagnetic waves transverse waves?</a>
+<br/>
+<div id="on_close_decisions" style="display:none">
+
+<p id="inline">
+In undergraduate electrodynamics courses, it is often just a given. The polarisation vector is perpendicular to the k-vector, meaning the electric (or magnetic) field vector oscillates in a plane perpendicular to the direction of propagation of the wave. A consequence of this is that electromagnetic polarisation can be described with a 2 element vector (at least in the fully polarised case). We expect a vector in 3D space to have 3 components, but confining it to the plane reduces the dimensionality.
+</p>
+
+<p id="inline">
+One approach to answering this question is to appeal to Maxwell’s equations. One can derive the electromagnetic wave equation, write down the general form of the solution and show that it can only be a solution if the polarisation vector is perpendicular to the k-vector. This is of course a reasonable answer, but I don’t find it satisfying because it doesn’t give an intuitive feel for why it has to be the case.
+</p>
+
+<p id="inline">
+What about the quantum mechanical view? The classical polarisation states map onto the projections of the spin vector, labelled ms, at least in terms of the degrees of freedom. Photons are spin-1 bosons, so we expect to find 3 values of ms, (+1,0,-1); we even call spin-1 states ‘triplet’ states based on this assumption. But it turns out that for photons this is not the case. Photons have no ms = 0 spin state, just ms = +/-1, labelling right and left circular polarisations. The two quantum polarisation states of a photon may be familiar from Alice and Bob’s communications using quantum cryptography [REF].
+</p>
+
+<p id="inline">
+…
+</p>
+
+<p id="inline">
+Consider watching a photon fly by at the speed of light. Now imagine that the photon is holding a metre ruler oriented along its direction of travel. What would the length of the metre ruler be as measured by you? We know that lengths along the direction of travel relative to an observer are contracted according to l = l0/gamma. 
+</p>
+
+<p id="inline">
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+$$l = l_0\sqrt{1-\frac{v^2}{c^2}}$$
+</script>
+
+</p>
+
+<p id="inline">
+Because photons (in a vacuum) travel at the speed of light, as measured from any inertial frame, the length of the metre ruler will be contracted to zero, as would any length measured along the direction of travel. The components of vectors transform like the corresponding coordinates in a given space, so in fact the component of any vector along the direction of travel will similarly be contracted to zero. Another way to think about this is that the plane perpendicular to the k-vector, into which the polarisation vector is constrained, is the whole of 3-dimensional space, length-contracted to zero size along the direction of travel.
+</p>
+
+</div>
+</div>
+
+
+<tr>
+<td id="copyright">Copyright &copy; Jeffrey Philippson
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var year = currentTime.getFullYear()
+document.write(year)
+//-->
+</script>
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+</table>
+
+</body>
+</html>
+
+
+
+
