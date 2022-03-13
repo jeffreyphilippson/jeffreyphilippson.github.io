@@ -3,6 +3,22 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="icon" href="favicon.ico">
 <title>Homepage of Jeffrey Philippson</title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 </head>
 
 <body>
@@ -46,20 +62,30 @@
 
 <tr><td>
 <p id="inline">
-
+Since I finished my formal education in physics, I have enjoyed the freedom to read much more widely in physics literature, covering areas outside my core field of traditional, non-relativeistic quantum mechanics of atoms and molecules. Reading about areas such as electroweak theory and quantum gravity has given me new perspectives on aspects of physics I felt I knew well. The mini-articles below cover aspects of physics that I have learned since finishing my doctorate. Comments and questions are <a href="contact.html">very welcome</a>.
 </p>
+
+<p id="inline">
+I should be clear that I am not claiming any novel insights here. Nothing in the topics covered here should be in any way controversial and certainly none of it is based on original research. I haven't included specific references, because this is my own synthesis of reading from a range of sources, which are listed at the bottom, and there is not a clear point-to-point mapping between what I have written and any particular source. That being said, I would like to express particular gratitude for insights gained from reading many works of Richard Feynman, Road to Reality by Roger Penrose and The Ideas of Particle Physics by James Dodd and Ben Gripaios. This latter book was really a remarkable read and I would highly recommend it to any physicist wanting to know more about theoretical and experimental particle physics.
+</p>
+
+<p id="inline">
+The articles below are written assuming a reasonable amount of background knowledge of physics. I have thought about trying to write more accessible versions suitable for a wider audience, but I suspect the questions asked are primarily of interest to people with some background in physics. Nonetheless, if there are any points that are unclear then do <a href="contact.html">contact me</a>. 
+</p>
+
 </td></tr>
 
 
+<tr><td>
 
-<div style="border:1px solid; padding:7px; width:85%; margin-bottom:10px">
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:10px ; margin-top:10px">
 
-<a href="javascript:;" onmousedown="toggleDiv('on_close_decisions');"> Why are electromagnetic waves transverse waves?</a>
+<a href="javascript:;" onmousedown="toggleDiv('EM_transverse');"> Why are electromagnetic waves transverse waves?</a>
 <br/>
-<div id="on_close_decisions" style="display:none">
+<div id="EM_transverse" style="display:none">
 
 <p id="inline">
-In undergraduate electrodynamics courses, it is often just a given. The polarisation vector is perpendicular to the k-vector, meaning the electric (or magnetic) field vector oscillates in a plane perpendicular to the direction of propagation of the wave. A consequence of this is that electromagnetic polarisation can be described with a 2 element vector (at least in the fully polarised case). We expect a vector in 3D space to have 3 components, but confining it to the plane reduces the dimensionality.
+In undergraduate electrodynamics courses, it is generally just a given. The polarisation vector is perpendicular to the k-vector, meaning the electric (or magnetic) field vector oscillates in a plane perpendicular to the direction of propagation of the wave. A consequence of this is that electromagnetic polarisation can be described with a <a href="https://en.wikipedia.org/wiki/Jones_calculus ">2 element vector</a> (at least in the fully polarised case). We expect a vector in 3D space to have 3 components, but confining it to the plane reduces the dimensionality.
 </p>
 
 <p id="inline">
@@ -67,32 +93,122 @@ One approach to answering this question is to appeal to Maxwell’s equations. O
 </p>
 
 <p id="inline">
-What about the quantum mechanical view? The classical polarisation states map onto the projections of the spin vector, labelled ms, at least in terms of the degrees of freedom. Photons are spin-1 bosons, so we expect to find 3 values of ms, (+1,0,-1); we even call spin-1 states ‘triplet’ states based on this assumption. But it turns out that for photons this is not the case. Photons have no ms = 0 spin state, just ms = +/-1, labelling right and left circular polarisations. The two quantum polarisation states of a photon may be familiar from Alice and Bob’s communications using quantum cryptography [REF].
+What about the quantum mechanical view? The classical polarisation states map onto the projections of the spin vector, labelled ms, at least in terms of the degrees of freedom. Photons are spin-1 bosons, so we expect to find 3 values of ms, (+1,0,-1); we even call spin-1 states ‘triplet’ states based on this assumption. But it turns out that for photons this is not the case. Photons have no ms = 0 spin state, just ms = +/-1, labelling right and left circular polarisations. The two quantum polarisation states of a photon may be familiar from Alice and Bob’s communications using quantum cryptography <a href=”https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/BB84_photons/BB84_photons.html”>[REF]</a>.
 </p>
 
 <p id="inline">
-…
+The conclusion seems to be that whether viewed from the classical or quantum perspective the details of electromagnetic wave polarisation are consistent with a transverse wave. This is perhaps not surprising, but it still begs the question, why? A clue can be found when we look outside electromagnetism at the broader electroweak theory. In electroweak theory, there are 4 gauge bosons, all spin-1, of which the photon is one. The other 3 gauge bosons are the uncharged Z<sup>0</sup> and the charged W<sup>+</sup> and W<sup>-</sup>, responsible for mediating the weak nuclear force. These latter 3 gauge bosons have polarisation vectors that are not confined to the plane perpendicular to the k vector, which means the waves describing them are not, in general, transverse waves.
 </p>
 
 <p id="inline">
-Consider watching a photon fly by at the speed of light. Now imagine that the photon is holding a metre ruler oriented along its direction of travel. What would the length of the metre ruler be as measured by you? We know that lengths along the direction of travel relative to an observer are contracted according to l = l0/gamma. 
+Why would polarisation be different in this way for the photon and its weak force mediating cousins? The most obvious difference is the rest mass, which is zero for the photon and non-zero for the others. A consequence of the photon having zero rest mass is that it travels at the speed of light as observed from any inertial frame. Let's do a thought experiment: consider watching a photon fly by at the speed of light. Now imagine that the photon is holding a metre ruler oriented along its direction of travel. What would the length of the metre ruler be as measured by you? We know that lengths along the direction of travel relative to an observer are contracted according to <i>l</i> = <i>l</i><sub>0</sub>/&gamma;. 
 </p>
 
 <p id="inline">
-
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-$$l = l_0\sqrt{1-\frac{v^2}{c^2}}$$
-</script>
-
+$$l = l_0\sqrt{1-v^2/c^2}$$
 </p>
 
 <p id="inline">
-Because photons (in a vacuum) travel at the speed of light, as measured from any inertial frame, the length of the metre ruler will be contracted to zero, as would any length measured along the direction of travel. The components of vectors transform like the corresponding coordinates in a given space, so in fact the component of any vector along the direction of travel will similarly be contracted to zero. Another way to think about this is that the plane perpendicular to the k-vector, into which the polarisation vector is constrained, is the whole of 3-dimensional space, length-contracted to zero size along the direction of travel.
+For <i>v</i> = <i>c</i>, the expression in the square root will be equal to zero and hence the observed length of the metre ruler will be contracted to zero, as would any length measured along the direction of travel. The components of vectors transform like the corresponding coordinates in a given space, so in fact the component of any vector along the direction of travel will similarly be contracted to zero. Another way to think about this is that the plane perpendicular to the k-vector, into which the polarisation vector is constrained, is the whole of 3-dimensional space, length-contracted to zero size along the direction of travel!
+</p>
+
+<p id="inline">
+Like any really satisfying explanation, this is almost obvious once you see it, but in discussing this with other physicists, it appears to me that this is not a widely appreciated explanation. I do understand that there are no practical benefits of this, but I for one got into physics to really understand the physical world.
 </p>
 
 </div>
 </div>
 
+</td></tr>
+
+<tr><td>
+
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:10px">
+
+<a href="javascript:;" onmousedown="toggleDiv('energy_momentum');">Is energy a component of momentum?</a>
+<br/>
+<div id="energy_momentum" style="display:none">
+
+<p id="inline">
+How would you respond to the assertion that energy is the time component of momentum? It might not at first glance seem reasonable; they are dimensionally different, after all. Also, we spent years learning about them and nobody ever mentioned that they could be the same thing. So what would it take to convince you of this assertion? The ideal approach is to start with a simple statement that everyone can agree on and then derive the conclusion through a simple set of logical steps. So let’s give it a try.
+</p>
+
+<p id="inline">
+According to special relativity, we live in a 4 dimensional universe with one time dimension and three spatial dimensions. To identify a location within that 4-dimensional space, a 4 component position vector is needed, the ‘4-position’. Such a location is referred to as an event, because it identifies both a time and a place. The spatial components used will depend on the chosen coordinate system; for the present discussion, we will use cartesian coordinates, resulting in a 4-position (<i>t</i>,<i>x</i>,<i>y</i>,<i>z</i>). This approach uses the <a href=”https://en.wikipedia.org/wiki/Four-vector”>Minkowski 4-vector</a> formalism. Recall that these calculations are usually done using units in which <i>c</i> = 1, giving time and space identical units, but if you would prefer to use SI units then the 4-position is (<i>ct</i>,<i>x</i>,<i>y</i>,<i>z</i>).
+</p>
+
+<p id="inline">
+Now let’s take the 4-position vector and apply a Fourier transform to it. Recall that the Fourier transform is a linear operator, so it applies component-wise, with no mixing between components. So the Fourier transform of the 4-position is a 4-vector whose components are simply the Fourier transform pairs of the coordinates, (<i>&omega;</i>,<i>k<sub>x</sub></i>,<i>k<sub>y</sub></i>,<i>k<sub>z</sub></i>). This is called the 4-wavevector and it is the frequency space counterpart of the 4-position: a vector frequency, for which the time component is temporal frequency and the spatial components are spatial frequency.
+</p>
+
+<p id="inline">
+A frequency space equivalent of the Lorentz transformations could be defined: in the same sense that different observers in different inertial frames will disagree on what is time and what is space, they will also disagree on what is <i>&omega;</i> and what is <b>k</b>. Now all we have to do is take our 4-wavevector and multiply it by <i>&#295;</i> to get another 4-vector, for which the time component is <i>&#295;&omega;</i> and the spatial components are <i> &#295;</i><b>k</b>, explicitly: (<i>E</i>,<i>p<sub>x</sub></i>,<i>p<sub>y</sub></i>,<i>p<sub>z</sub></i>), the 4-momentum, with energy as the time component.
+</p>
+
+<p id="inline">
+Of course, it is in a sense an arbitrary decision to call it momentum; we could just as well say that momentum provides the spatial components of the 4-energy, or invent some new name altogether (conventionally and unimaginatively it is referred to as “energy-momentum”). And of course, different observers in different inertial frames will disagree on what is energy and what is momentum. We spent years learning about energy and momentum and yet no one ever thought to tell us that they were ultimately the same thing.
+</p>
+
+<p id="inline">
+Some may complain about the statement that energy and the other components of momentum are “the same thing” and with some justification. There are obvious differences related to our differing experiences of time and space, although personal experience may not be the best way to get insights into special relativity. More fundamentally, there are the geometric differences described by Minkowski geometry: notably that timelike vectors have negative length and spacelike vectors positive length. This does feel like a valid challenge, but remember that the Lorentz transformations tell us that observers in different inertial frames will disagree on what is time and what is space. So if you accept the principle of relativity (which we do), that there is no priviliged rest frame  so all inertial frames are equivalent, then it is difficult to argue that time and space are not the same thing. They are different as observed from a given inertial frame, but somehow globally have to be the same thing. Any suggestions on untangling this semantic knot would be <a href="contact.html">very welcome</a>.
+</p>
+
+<p id="inline">
+None of this should prevent us from agreeing that energy is the time component of momentum. And now that we are (hopefully) aligned on that, we can start to ask other interesting questions. Time is the time component of position and energy is the time component of momentum, but what about all the other vectors; don’t they have time components? And the answer is yes, they do! There are a set of underlying connections between physical quantities that we may have hitherto considered entirely separate.
+</p>
+
+<p id="inline">
+Where to begin? The next vector most people ask about is the force, which is natural given it’s importance for dynamical calculations. This is an easy one, given its known relationship with momentum. According to Newton’s 2<sup>nd</sup> law, for a force, <b>F</b> and momentum <b>p</b>, we have,
+
+$$\mathbf{F} = \frac{d\mathbf{p}}{dt}$$
+
+So the spatial components of the 4-force are just the time-derivatives of the spatial components of the 4-momentum. The time component of the 4-force is then the time derivative of the energy, otherwise known as power. So the power dissipated in the application of a force is the time component of the force and again we could define relationships like the Lorentz transformations relating these components seen from the perspectives of observers in different inertial frames.
+</p>
+
+<p id="inline">
+More interesting connections come from electromagnetism, which has from the beginning been our best window into special relativity, due to the fundamentally relativistic nature of light. Consider the source of the electromagnetic field in Maxwell’s equations. The source terms include either <i>&rho;</i> or <b>J</b>, the charge density or current density respectively. The components of the current density, <b>J</b>, can be thought of as flux of electric charge along each of the 3 spatial dimensions. Similarly, the charge density, <i>&rho;</i> can be thought of as the flux of electric charge along the time dimension. This turns out to be a more general result, important in the definition of the stress-energy tensor of general relativity: flux in space corresponds with density in time. The units can be seen to match with the expected factor of <i>c</i>,
+
+$$\textnormal{Cm}^{-3}\times \textnormal{ms}^{-1} = \textnormal{Cm}^{-2}\textnormal{s}^{-1}.$$
+</p>
+
+<p id="inline">
+Another interesting example from the world of electromagnetism is the connection between the scalar and vector potentials. The scalar potential, <i>&phi;</i> is the familiar potential from electrostatics, used to calculate the electric field, <b>E</b>,
+
+$$\mathbf{E} = -\mathbf{\nabla}\phi$$
+
+The vector potential, <b>A</b>, is used to calculate the magnetic field,
+
+$$\mathbf{B} = \mathbf{\nabla}\times \mathbf{A}$$
+
+By now, it probably comes as no surprise to hear that the scalar and vector potentials provide the time and space components respectively of a 4-potential. As expected the units are different by a factor of velocity.
+</p>
+
+<p id="inline">
+It is interesting to ponder the different levels of mental gymnastics needed to integrate these relationships into our world view. The idea that time and space are fundamentally the same thing is just baffling, entirely contradictory to our experience. Accepting energy as a component of momentum feels less of a jump, given that the definition of energy has always been something of an enigma, although it remains perplexing that we were never taught this during years of studying physics. And then there is the simple fact that charge and current are basically the same thing and can be equivalent for observers in different inertial frames, which is just obvious.
+</p>
+
+</div>
+</div>
+
+</td></tr>
+
+<tr><td>
+<p id="inline">
+<b>Sources and further reading</b>
+</p>
+
+<p id="inline">
+<ol>
+	<li>Six not so easy pieces, 4<sup>th</sup> Ed. (2011), Richard P. Feynman, 978-0465025268</li>
+	<li>Feynman Lectures on Gravitation (1999), Richard P. Feynman, 0140284508</li>
+	<li>The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup>th</sup> Ed. (2007), Roger Penrose, 0224044478</li>
+	<li> , <sup>th</sup> Ed. (), , </li>
+	<li>The Ideas of Particle Physics, 4<sup>th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402</li>
+</ol>
+
+</p>
+
+</td></tr>
 
 <tr>
 <td id="copyright">Copyright &copy; Jeffrey Philippson
