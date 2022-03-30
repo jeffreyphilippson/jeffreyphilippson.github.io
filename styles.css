@@ -221,3 +221,13 @@ font-size:13 !important;
 font-size:13;
 font-weight:700;
 }
+
+/*****
+li + li {
+  line-height: 180%;
+}
+******/
+
+sup#list {
+vertical-align:top;
+}
