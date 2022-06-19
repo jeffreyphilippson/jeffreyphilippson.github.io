@@ -4,19 +4,20 @@
 <link rel="icon" href="favicon.ico">
 <title>Homepage of Jeffrey Philippson</title>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML-CSS"],
+<script type="text/javascript">
+  window.MathJax = {
     tex2jax: {
       inlineMath: [ ["\\(","\\)"] ],
       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
       processEscapes: true
     },
-    "HTML-CSS": { fonts: ["TeX"] }
-  });
+	loader: {load: ['[tex]/color']},
+	tex: {packages: {'[+]': ['color’]}},
+   loader: {load: ['[tex]/colortbl]},
+	tex: {packages: {'[+]': ['colortbl]}}
+  };
 </script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=TeX-AMS_HTML">
 </script>
 
 </head>
@@ -240,39 +241,28 @@ The source of the electromagnetic field is of course electric charge, <i>q</i>; 
 How does it look if we apply the same principle to gravity, treating energy-momentum as the gravitational &ldquo;charge&rdquo;? An obvious difference is the vector nature of gravitational charge, so we expect a tensor source term representing the flux of the 4 components of energy-momentum along each of the 4 dimensions of space-time.
 
 $$
-\left(
-\begin{array}{cccc}
-T^{00} & T^{01} & T^{02} & T^{03} \\
-T^{10} & T^{11} & T^{12} & T^{13} \\
-T^{20} & T^{21} & T^{22} & T^{23} \\
-T^{30} & T^{31} & T^{32} & T^{33}
-\end{array}
-\right)
-$$
-
-<!—
-$$
-%\require{xcolor}
+\require{colortbl}\require{color}
 \left(\begin{array}{cccc}
-    \rowcolor{red!20}
-    x   & x   & x  & x  \\
-    0   & x   & x  & x  \\
-   \rowcolor{blue!20}
-    0   & 0   & x  & x  \\
-    0   & 0   & 0  & x  \\
-    \cellcolor{green!10} a  &  b  & \cellcolor{green!10} c &  d \\
-  \end{array}\right)
-$——>
+    \rowcolor{yellowgreen}
+    \cellcolor{salmon} T^{00}   & T^{01}   & T^{02}  & T^{03}  \\
+    \rowcolor{yellow}
+    \cellcolor{yellowgreen} T^{10}   & \cellcolor{skyblue} T^{11}   & T^{12}  & T^{13}  \\
+    \rowcolor{yellow}
+    \cellcolor{yellowgreen} T^{20}   & T^{21}   & \cellcolor{skyblue} T^{22}  & T^{23}  \\
+    \rowcolor{yellow}
+    \cellcolor{yellowgreen} T^{30}   & T^{31}   & T^{32}  & \cellcolor{skyblue} T^{33}  \\
+\end{array}\right)
+$$
 
 This is what is referred to as the stress-energy tensor, for reasons that will become clear. The elements, <i>T</i><sup>&mu;&nu;</sup>, represent the fluxes of the four components of energy-momentum along each of the four dimensions of space-time. Here the index &mu; labels the flux directions and &nu; labels the components of energy-momentum, with the values 0-3 identifying time and the 3 spatial axes, which we will call <i>x</i>, <i>y</i> and <i>z</i>, respectively.
 </p>
 
 <p id="inline">
-Starting with the top row, then, the first element is the flux of energy along the time axis, also known as energy density. This component on its own corresponds with Newtonian gravity, with mass (energy) density as the source. The remaining three elements of the first row are the densities of the 3 spatial components of linear momentum. The concept of density of momentum is not immediately intuitive, but it turns out that density of the <i>k</i><sup>th</sup> component of linear momentum is identically equal to the flux of energy along the <i>k</i>-axis: <i>T</i><sup>0<i>k</i></sup> = <i>T</i><sup><i>k</i>0</sup> for <i>k</i> = 1-3.
+Starting with the top row, then, the first element is the flux of energy along the time axis, also known as energy density (red). This component on its own corresponds with Newtonian gravity, with mass (energy) density as the source. The remaining three elements of the first row are the densities of the 3 spatial components of linear momentum (green). The concept of density of momentum is not immediately intuitive, but it turns out that density of the <i>k</i><sup>th</sup> component of linear momentum is identically equal to the flux of energy along the <i>k</i>-axis (green): <i>T</i><sup>0<i>k</i></sup> = <i>T</i><sup><i>k</i>0</sup> for <i>k</i> = 1-3.
 </p>
 
 <p id="inline">
-There remains to describe the 3 &times; 3 matrix representing the flux of the 3 spatial components of momentum along each of the 3 spatial axes. But what is flux of momentum? Flux is flow of something per unit time, per unit area. We know that momentum per unit time is force and force per unit area is pressure, or more generally stress (pressure being the isotropic special case of stress). So the the remaining 3 &times; 3 elements of the stress-energy tensor are in fact the <a href="https://en.wikipedia.org/wiki/Cauchy_stress_tensor">stress tensor</a>, familiar from the analysis of deformation in materials. Flux of the <i>i</i><sup>th</sup>-component of momentum along the <i>i</i>-axis corresponds with the <i>i</i><sup>th</sup>-component of force due to pressure. Flux of the <i>i</i><sup>th</sup>-component of momentum along the <i>j</i>-axis, with <i>i</i> &ne; <i>j</i>, corresponds with a component of shear stress. 
+There remains to describe the 3 &times; 3 matrix representing the flux of the 3 spatial components of momentum along each of the 3 spatial axes. But what is flux of momentum? Flux is flow of something per unit time, per unit area. We know that momentum per unit time is force and force per unit area is pressure, or more generally stress (pressure being the isotropic special case of stress). So the the remaining 3 &times; 3 elements of the stress-energy tensor are in fact the <a href="https://en.wikipedia.org/wiki/Cauchy_stress_tensor">stress tensor</a>, familiar from the analysis of deformation in materials. Flux of the <i>i</i><sup>th</sup>-component of momentum along the <i>i</i>-axis corresponds with the <i>i</i><sup>th</sup>-component of force due to pressure (blue). Flux of the <i>i</i><sup>th</sup>-component of momentum along the <i>j</i>-axis, with <i>i</i> &ne; <i>j</i>, corresponds with a component of shear stress (yellow). 
 </p>
 
 <p id="inline">
