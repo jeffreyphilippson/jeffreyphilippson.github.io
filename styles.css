@@ -226,8 +226,11 @@ font-weight:700;
 li + li {
   line-height: 180%;
 }
-******/
 
 sup#list {
 vertical-align:top;
 }
+******/
+
+sup { vertical-align: top; position: relative; top: -0.3em; }
+sub { vertical-align: bottom; position: relative; bottom: -0.2em; }
