@@ -1,0 +1,187 @@
+<html> 
+  <head>
+  <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="icon" href="favicon.ico">
+<title>Homepage of Jeffrey Philippson</title>
+
+<script type="text/javascript">
+  window.MathJax = {
+    tex2jax: {
+      inlineMath: [ ['\(','\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+	loader: {load: ['[tex]/color']},
+	tex: {packages: {'[+]': ['colorâ]}},
+   loader: {load: ['[tex]/colortbl]},
+	tex: {packages: {'[+]': ['colortbl]}}
+  };
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=TeX-AMS_HTML">
+</script>
+
+
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function () {
+  		var includes = $('[data-include]')
+  		$.each(includes, function () {
+    		var file = 'Views/' + $(this).data('include') + '.html'
+    		$(this).load(file)
+		})
+	});
+    </script> 
+  </head> 
+
+  <body> 
+  
+  <table width="100%">
+<tr align="center">
+<td id="banner"><div>Jeff's physics writing</div></td>
+</tr>
+<tr align="center">
+<td>
+
+<table width="100%" border="0">
+<tr valign="top">
+<td id="list-nav" width="220">
+
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="bio.html">Bio</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a style="background:#a2b3a1;color:#000">Physics</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="contact.html">contact</a></li>
+</ul>
+
+</td>
+
+<td style="text-align:top">
+
+<script language="javascript">
+  function toggleDiv(divid){
+    if(document.getElementById(divid).style.display == 'none'){
+      document.getElementById(divid).style.display = 'block';
+    }else{
+      document.getElementById(divid).style.display = 'none';
+    }
+  }
+</script>
+
+<table width="100%">
+
+<tr><td>
+<p id="inline">
+Since I finished my formal education in physics, I have enjoyed the freedom to read much more widely in physics literature, covering areas outside my core field of traditional, non-relativistic quantum mechanics of atoms and molecules. Reading about areas such as electroweak theory and quantum gravity has given me new perspectives on aspects of physics I felt I knew well. The pieces below primarily cover aspects of physics that I have learned since finishing my doctorate. Comments and questions are <a href="contact.html">very welcome</a>.
+</p>
+
+<p id="inline">
+I should be clear that I am not claiming any novel insights here. Nothing in the topics covered below should be in any way controversial and certainly none of it is based on original research. I have included specific references where appropriate and a list of source materials at the bottom. I would like to express appreciation for insights gained from reading many works of Richard Feynman, Road to Reality by Roger Penrose and The Ideas of Particle Physics by James Dodd and Ben Gripaios. This latter book was really a remarkable read and I would highly recommend it to any physicist wanting to know more about theoretical and experimental particle physics.
+</p>
+
+<p id="inline">
+The pieces below are written assuming quite a lot of background knowledge of physics. I have thought about trying to write more accessible versions suitable for a wider audience, but I suspect the questions asked are primarily of interest to physicists. Nonetheless, if there are any points that are unclear then do <a href="contact.html">contact me</a>. 
+</p>
+
+</td></tr>
+
+
+<tr><td>
+
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px ; margin-top:0px">
+
+<a href="javascript:;" onmousedown="toggleDiv('EM_transverse');"> Why are electromagnetic waves transverse waves?</a>
+<br/>
+<div id="EM_transverse" style="display:none">
+
+<p id="inline">
+In undergraduate electrodynamics courses, it is generally just a given. The polarisation vector is perpendicular to the <i>k</i>-vector, meaning the electric (or magnetic) field vector oscillates in a plane perpendicular to the direction of propagation of the wave. A consequence of this is that electromagnetic polarisation can be described with a <a href="https://en.wikipedia.org/wiki/Jones_calculus ">2 element vector</a> (at least in the fully polarised case). We expect a vector in 3D space to have 3 components, but confining it to a plane reduces the dimensionality.
+</p>
+
+<p id="inline">
+One approach to answering this question is to appeal to Maxwell's equations. One can derive the electromagnetic wave equation, write down the general form of the solution and show that it can only be a solution if the polarisation vector is perpendicular to the <i>k</i>-vector.<sup>[1]</sup> This is of course a reasonable answer, but I don't find it satisfying because it doesn't give an intuitive feel for why this has to be the case.
+</p>
+
+<p id="inline">
+What about the quantum mechanical view? The classical polarisation states map onto the projections of the spin vector, labelled <i>m<sub>s</sub></i>, at least in terms of the degrees of freedom. Photons are spin-1 bosons, so we expect to find 3 values of <i>m<sub>s</sub></i>, (+1,0,-1); we even call spin-1 states &lsquo;triplet&rsquo; states based on this assumption. But it turns out that for photons this is not the case. Photons have no <i>m<sub>s</sub></i> = 0 spin state, just <i>m<sub>s</sub></i> = +/-1, labelling right and left circular polarisations. The two quantum polarisation states of a photon may be familiar from <a href="https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/BB84_photons/BB84_photons.html">Alice and Bob's communications using quantum cryptography</a>.
+</p>
+
+<p id="inline">
+The conclusion seems to be that whether viewed from the classical or quantum perspective the details of electromagnetic wave polarisation are consistent with a transverse wave. This is perhaps not surprising, but it still begs the question, why? A clue can be found when we look outside electromagnetism at the broader electroweak theory. In electroweak theory, there are 4 gauge bosons, all spin-1, of which the photon is one. The other 3 gauge bosons are the uncharged Z<sup>0</sup> and the charged W<sup>+</sup> and W<sup>-</sup>, together responsible for mediating the weak nuclear force. These latter 3 gauge bosons have polarisation vectors that are not confined to the plane perpendicular to the <i>k</i>-vector, which means that the waves describing them are not, in general, transverse waves.<sup>[2]</sup>
+</p>
+
+<p id="inline">
+Why would polarisation be different in this way for the photon and its weak force mediating cousins? The most obvious difference is the rest mass, which is zero for the photon and non-zero for the others. A consequence of the photon having zero rest mass is that it travels at the speed of light as observed from any inertial frame. Let's do a thought experiment: consider watching a photon fly by at the speed of light. Now imagine that the photon is holding a metre ruler oriented along its direction of travel. What would the length of the metre ruler be as measured by you? We know that lengths along the direction of travel relative to an observer are contracted according to <i>l</i> = <i>l</i><sub>0</sub>/&gamma;. 
+</p>
+
+<p id="inline">
+$$l = l_0\sqrt{1-v^2/c^2}$$
+</p>
+
+<p id="inline">
+For <i>v</i> = <i>c</i>, the expression in the square root will be equal to zero and hence the observed length of the metre ruler will be contracted to zero, as would any length measured along the direction of travel. The components of vectors transform like the corresponding coordinates in a given space, so in fact the component of any vector along the direction of travel will similarly be contracted to zero. Another way to think about this is that the plane perpendicular to the <i>k</i>-vector, into which the polarisation vector is constrained, is the whole of 3-dimensional space, length-contracted to zero size along the direction of travel!
+</p>
+
+<p id="inline">
+Like any really satisfying explanation, this is almost obvious once you see it, but in discussing this with other physicists, it appears to me that this is not a widely appreciated explanation. There may or may not be practical benefits to this insight, but it does give an intuitive understanding of the phenomenon.
+</p>
+
+<p id="inline">
+<ol>
+	<li style="line-height:150%">Classical Electrodynamics, 3<sup id="list">rd</sup> Ed. (1999), John David Jackson, 047130932<br/>
+See the discussion of plane waves in a non-conducting medium, pages 295-297.</li>
+	<li style="line-height:150%">The Ideas of Particle Physics, 4<sup id="list">th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402
+<br/>
+See the discussion of the consequences of vector (i.e. spin-1) bosons with non-zero rest mass on page 99.</li>
+</ol>
+
+</p>
+
+</div>
+</div>
+
+</td></tr>
+  
+<div data-include="include_test_unstable"></div>
+     
+<tr><td>
+<p id="inline">
+<b>Sources and further reading</b>
+</p>
+
+<p id="inline">
+<ul>
+    <li style="line-height:150%">Six not so easy pieces, 4<sup id="list">th</sup> Ed. (2011), Richard P. Feynman, 978-0465025268</li>
+    <li style="line-height:150%">Feynman Lectures on Gravitation (1999), Richard P. Feynman, 0140284508</li>
+    <li style="line-height:150%">The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup id="list">th</sup> Ed. (2007), Roger Penrose, 0224044478</li>
+    <li style="line-height:150%">The Ideas of Particle Physics, 4<sup id="list">th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402</li>
+</ul>
+
+</p>
+
+</td></tr>
+
+<tr>
+<td id="copyright">Copyright &copy; Jeffrey Philippson
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var year = currentTime.getFullYear()
+document.write(year)
+//-->
+</script>
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+</table>
+
+
+  </body> 
+</html>

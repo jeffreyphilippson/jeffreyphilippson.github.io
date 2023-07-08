@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="icon" href="favicon.ico">
+<title>Homepage of Jeffrey Philippson</title>
+
+<script type="text/javascript">
+  window.MathJax = {
+    tex2jax: {
+      inlineMath: [ ['\(','\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
+    },
+	loader: {load: ['[tex]/color']},
+	tex: {packages: {'[+]': ['colorâ]}},
+   loader: {load: ['[tex]/colortbl]},
+	tex: {packages: {'[+]': ['colortbl]}}
+  };
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=TeX-AMS_HTML">
+</script>
+
+</head>
+
+<body>
+<table width="100%">
+<tr align="center">
+<td id="banner"><div>Jeff's technology writing</div></td>
+</tr>
+<tr align="center">
+<td>
+
+<table width="100%" border="0">
+<tr valign="top">
+<td id="list-nav" width="220">
+
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="bio.html">Bio</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a style="background:#a2b3a1;color:#000">Physics</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="contact.html">contact</a></li>
+</ul>
+
+</td>
+
+<td style="text-align:top">
+
+<script language="javascript">
+  function toggleDiv(divid){
+    if(document.getElementById(divid).style.display == 'none'){
+      document.getElementById(divid).style.display = 'block';
+    }else{
+      document.getElementById(divid).style.display = 'none';
+    }
+  }
+</script>
+
+<table width="100%">
+
+<tr><td>
+<p id="inline">
+Since I finished my formal education in physics, I have enjoyed the freedom to read much more widely in physics literature, covering areas outside my core field of traditional, non-relativistic quantum mechanics of atoms and molecules. Reading about areas such as electroweak theory and quantum gravity has given me new perspectives on aspects of physics I felt I knew well. The pieces below primarily cover aspects of physics that I have learned since finishing my doctorate. Comments and questions are <a href="contact.html">very welcome</a>.
+</p>
+
+<p id="inline">
+I should be clear that I am not claiming any novel insights here. Nothing in the topics covered below should be in any way controversial and certainly none of it is based on original research. I have included specific references where appropriate and a list of source materials at the bottom. I would like to express appreciation for insights gained from reading many works of Richard Feynman, Road to Reality by Roger Penrose and The Ideas of Particle Physics by James Dodd and Ben Gripaios. This latter book was really a remarkable read and I would highly recommend it to any physicist wanting to know more about theoretical and experimental particle physics.
+</p>
+
+<p id="inline">
+The pieces below are written assuming quite a lot of background knowledge of physics. I have thought about trying to write more accessible versions suitable for a wider audience, but I suspect the questions asked are primarily of interest to physicists. Nonetheless, if there are any points that are unclear then do <a href="contact.html">contact me</a>. 
+</p>
+
+</td></tr>
+
+
+<tr><td>
+
+<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px ; margin-top:0px">
+
+<a href="javascript:;" onmousedown="toggleDiv('shear_rate');">What is the relevant shear rate for determining the viscosity of a non-Newtonian fluid?</a>
+<br/>
+<div id="shear_rate" style="display:none">
+
+<p>
+This has been a recurring question during my career. In the context of a device that moves fluids, non-Newtonian behaviour means that the viscosity of the fluid depends on the local shear rate. A good quality viscometer can determine the viscosity over a wide range of shear rates, but how to determine the relevant shear rate for the application? For an arbitrary geometry, this is a very hard problem and can only really be addressed using a computational fluid dynamics (CFD) approach, but for many applications, it is sufficient to consider the simple case of flow in a cylindrical pipe. For this restricted case, we can derive an analytical solution, with the additional assumption that it is a mildly non-Newtonian (power-law dependence) non-Newtonian fluid. The reason for this additional restriction will become clear, but I would not expect this calculation to apply for fluids such as blood, with very complex internal interactions.
+</p>
+
+<p>
+We will start with a definition: shear rate is the gradient of fluid velocity perpendicular to the direction of fluid flow. As a spatial derivative of a velocity, it has dimensions of inverse time, hence a rate. Many people are more familiar with the concept of shear stress, which is a related concept in the treatment of elastic materials. Consider that when shear is applied to an elastic material, the deformation generates a restoring force that corresponds with a stress distribution within the material. When shear is applied to a viscous material such as a liquid, the material simply flows in response to the deformation and there is no steady state stress. Nonetheless, shear can be important for viscous materials, as is clear from the dependence of viscosity on shear rate for non-Newtonian fluids. Shear within fluid flow corresponds with adjacent laminae travelling in the same direction but at different velocities, as characterised by the shear rate.
+</p>
+
+<p>
+In order to calculate shear rate, we need to start with the velocity field in the fluid flow. For the case of a Newtonian fluid flowing in a cylindrical pipe, this takes a particularly simple form, with a quadratic dependence on radial distance from the centre of the pipe.
+
+$$
+v(r) = v_0\left(1 - \frac{r^2}{R^2}\right)
+$$
+
+Here, <i>v</i> is the local fluid velocity, <i>v</i><sub>0</sub> is the centre velocity, <i>r</i> is the radial distance from the centre of the pipe and <i>R</i> is the internal radius of the pipe.
+</p>
+
+
+
+</div>
+</div>
+</td></tr>
+
+
+
+<tr><td>
+<p id="inline">
+<b>Sources and further reading</b>
+</p>
+
+<p id="inline">
+<ul>
+    <li style="line-height:150%">Six not so easy pieces, 4<sup id="list">th</sup> Ed. (2011), Richard P. Feynman, 978-0465025268</li>
+    <li style="line-height:150%">Feynman Lectures on Gravitation (1999), Richard P. Feynman, 0140284508</li>
+    <li style="line-height:150%">The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup id="list">th</sup> Ed. (2007), Roger Penrose, 0224044478</li>
+    <li style="line-height:150%">The Ideas of Particle Physics, 4<sup id="list">th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402</li>
+</ul>
+
+</p>
+
+</td></tr>
+
+<tr>
+<td id="copyright">Copyright &copy; Jeffrey Philippson
+<script type="text/javascript">
+<!--
+var currentTime = new Date()
+var year = currentTime.getFullYear()
+document.write(year)
+//-->
+</script>
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+</table>
+
+</body>
+</html>
+
+
+
