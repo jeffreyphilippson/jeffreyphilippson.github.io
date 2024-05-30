@@ -62,77 +62,6 @@
 
 <table width="100%">
 
-<tr><td>
-<p id="inline">
-Since I finished my formal education in physics, I have enjoyed the freedom to read much more widely in physics literature, covering areas outside my core field of traditional, non-relativistic quantum mechanics of atoms and molecules. Reading about areas such as electroweak theory and quantum gravity has given me new perspectives on aspects of physics I felt I knew well. The pieces below primarily cover aspects of physics that I have learned since finishing my doctorate. Comments and questions are <a href="contact.html">very welcome</a>.
-</p>
-
-<p id="inline">
-I should be clear that I am not claiming any novel insights here. Nothing in the topics covered below should be in any way controversial and certainly none of it is based on original research. I have included specific references where appropriate and a list of source materials at the bottom. I would like to express appreciation for insights gained from reading many works of Richard Feynman, Road to Reality by Roger Penrose and The Ideas of Particle Physics by James Dodd and Ben Gripaios. This latter book was really a remarkable read and I would highly recommend it to any physicist wanting to know more about theoretical and experimental particle physics.
-</p>
-
-<p id="inline">
-The pieces below are written assuming quite a lot of background knowledge of physics. I have thought about trying to write more accessible versions suitable for a wider audience, but I suspect the questions asked are primarily of interest to physicists. Nonetheless, if there are any points that are unclear then do <a href="contact.html">contact me</a>. 
-</p>
-
-</td></tr>
-
-
-<tr><td>
-
-<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px ; margin-top:0px">
-
-<a href="javascript:;" onmousedown="toggleDiv('EM_transverse');"> Why are electromagnetic waves transverse waves?</a>
-<br/>
-<div id="EM_transverse" style="display:none">
-
-<p id="inline">
-In undergraduate electrodynamics courses, it is generally just a given. The polarisation vector is perpendicular to the <i>k</i>-vector, meaning the electric (or magnetic) field vector oscillates in a plane perpendicular to the direction of propagation of the wave. A consequence of this is that electromagnetic polarisation can be described with a <a href="https://en.wikipedia.org/wiki/Jones_calculus ">2 element vector</a> (at least in the fully polarised case). We expect a vector in 3D space to have 3 components, but confining it to a plane reduces the dimensionality.
-</p>
-
-<p id="inline">
-One approach to answering this question is to appeal to Maxwell's equations. One can derive the electromagnetic wave equation, write down the general form of the solution and show that it can only be a solution if the polarisation vector is perpendicular to the <i>k</i>-vector.<sup>[1]</sup> This is of course a reasonable answer, but I don't find it satisfying because it doesn't give an intuitive feel for why this has to be the case.
-</p>
-
-<p id="inline">
-What about the quantum mechanical view? The classical polarisation states map onto the projections of the spin vector, labelled <i>m<sub>s</sub></i>, at least in terms of the degrees of freedom. Photons are spin-1 bosons, so we expect to find 3 values of <i>m<sub>s</sub></i>, (+1,0,-1); we even call spin-1 states &lsquo;triplet&rsquo; states based on this assumption. But it turns out that for photons this is not the case. Photons have no <i>m<sub>s</sub></i> = 0 spin state, just <i>m<sub>s</sub></i> = +/-1, labelling right and left circular polarisations. The two quantum polarisation states of a photon may be familiar from <a href="https://www.st-andrews.ac.uk/physics/quvis/simulations_html5/sims/BB84_photons/BB84_photons.html">Alice and Bob's communications using quantum cryptography</a>.
-</p>
-
-<p id="inline">
-The conclusion seems to be that whether viewed from the classical or quantum perspective the details of electromagnetic wave polarisation are consistent with a transverse wave. This is perhaps not surprising, but it still begs the question, why? A clue can be found when we look outside electromagnetism at the broader electroweak theory. In electroweak theory, there are 4 gauge bosons, all spin-1, of which the photon is one. The other 3 gauge bosons are the uncharged Z<sup>0</sup> and the charged W<sup>+</sup> and W<sup>-</sup>, together responsible for mediating the weak nuclear force. These latter 3 gauge bosons have polarisation vectors that are not confined to the plane perpendicular to the <i>k</i>-vector, which means that the waves describing them are not, in general, transverse waves.<sup>[2]</sup>
-</p>
-
-<p id="inline">
-Why would polarisation be different in this way for the photon and its weak force mediating cousins? The most obvious difference is the rest mass, which is zero for the photon and non-zero for the others. A consequence of the photon having zero rest mass is that it travels at the speed of light as observed from any inertial frame. Let's do a thought experiment: consider watching a photon fly by at the speed of light. Now imagine that the photon is holding a metre ruler oriented along its direction of travel. What would the length of the metre ruler be as measured by you? We know that lengths along the direction of travel relative to an observer are contracted according to <i>l</i> = <i>l</i><sub>0</sub>/&gamma;. 
-</p>
-
-<p id="inline">
-$$l = l_0\sqrt{1-v^2/c^2}$$
-</p>
-
-<p id="inline">
-For <i>v</i> = <i>c</i>, the expression in the square root will be equal to zero and hence the observed length of the metre ruler will be contracted to zero, as would any length measured along the direction of travel. The components of vectors transform like the corresponding coordinates in a given space, so in fact the component of any vector along the direction of travel will similarly be contracted to zero. Another way to think about this is that the plane perpendicular to the <i>k</i>-vector, into which the polarisation vector is constrained, is the whole of 3-dimensional space, length-contracted to zero size along the direction of travel!
-</p>
-
-<p id="inline">
-Like any really satisfying explanation, this is almost obvious once you see it, but in discussing this with other physicists, it appears to me that this is not a widely appreciated explanation. There may or may not be practical benefits to this insight, but it does give an intuitive understanding of the phenomenon.
-</p>
-
-<p id="inline">
-<ol>
-	<li style="line-height:150%">Classical Electrodynamics, 3<sup id="list">rd</sup> Ed. (1999), John David Jackson, 047130932<br/>
-See the discussion of plane waves in a non-conducting medium, pages 295-297.</li>
-	<li style="line-height:150%">The Ideas of Particle Physics, 4<sup id="list">th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402
-<br/>
-See the discussion of the consequences of vector (i.e. spin-1) bosons with non-zero rest mass on page 99.</li>
-</ol>
-
-</p>
-
-</div>
-</div>
-
-</td></tr>
 
 <tr><td>
 
@@ -147,15 +76,15 @@ If you haven't read the piece, &ldquo;Why are electromagnetic waves transverse w
 </p>
 
 <p>
-Having already considered the effect of relativistic length contraction on photon polarisation, it is interesting to ponder the corresponding effect of time dilation. A metre ruler carried by a photon is length contracted to zero along its direction of propagation and equivalently we observe the photon's wristwatch standing still. From the photon's point of view, the metre ruler has the expected length and its watch ticks at the normal rate, because both are at rest in its inertial frame.
+Having already considered the effect of relativistic length contraction on photon polarisation, it is interesting to ponder the corresponding effect of time dilation. We would observe a metre ruler carried by a photon length contracted to zero along its direction of propagation and equivalently we observe the photon's wristwatch standing still. From the photon's point of view, the metre ruler has the expected length and its watch ticks at the normal rate, because both are at rest in its inertial frame.
 </p>
 
 <p>
-Considering the effect of time dilation led me to ask a question I had never asked before: are photons stable particles? The other 3 electroweak gauge bosons, the W<sup>+</sup>, W<sup>-</sup> and Z<sub>0</sub> that together mediate the nuclear weak force, are all unstable particles with lifetimes of approximately 0.4 yocto-seconds, where a yocto-second (ys) is 10<sup>-24</sup> seconds or a trillionth of a trillionth of a second.<sup>[]</sup> In contrast, photons appear to be very stable; a telescope observing a distant quasar is capturing photons that have travelled through space for billions of years without decaying. We know that relativistic effects can make the properties of the zero rest mass photon differ from its weak force mediating cousins.
+Considering the effect of time dilation led me to ask a question I had never asked before: are photons stable particles? The other 3 electroweak gauge bosons, the W<sup>+</sup>, W<sup>-</sup> and Z<sub>0</sub> that together mediate the nuclear weak force, are all unstable particles with lifetimes on the order of half a yocto-second, where a yocto-second (ys) is 10<sup>-24</sup> seconds or a trillionth of a trillionth of a second.<sup>[]</sup> In contrast, photons appear to be very stable; a telescope observing a distant quasar is capturing photons that have travelled through space for billions of years without decaying. We know that relativistic effects can make the properties of the zero rest mass photon differ from its weak force mediating cousins.
 </p>
 
 <p>
-As a comparison, consider the example of <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/muonatm.html">atmospheric muons</a>, which are created through the interaction of cosmic rays (high energy protons) with molecules in the atmosphere at altitudes in the region of 15 km above sea level. Muons are heavy leptons and are unstable particles with a lifetime of approximately 2 &mu;s. Even if they could travel at the speed of light and were travelling in a vacuum, they would still only travel 600 m in 2 &mu;s, so we would naively expect that a vanishingly small fraction would be detected at sea level. Furthermore, muons are charged particles that lose a significant amount of energy as they travel through the atmosphere, so even though they are created with high energy, travelling close to the speed of light, they are subsequently slowed significantly.
+As a comparison, consider the example of <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Particles/muonatm.html">atmospheric muons</a>, which are created through the interaction of cosmic rays (high energy protons) with molecules in the atmosphere at altitudes in the region of 15 km above sea level. Muons are heavy leptons and are unstable particles with a lifetime of approximately 2 &mu;s. Even if they could travel at the speed of light and were not slowedtravelling in a vacuum, they would still only travel 600 m in 2 &mu;s, so we would naively expect that a vanishingly small fraction would be detected at sea level. Furthermore, muons are charged particles that lose a significant amount of energy as they travel through the atmosphere, so even though they are created with high energy, travelling close to the speed of light, they are subsequently slowed significantly.
 </p>
 
 <p>
@@ -192,241 +121,108 @@ See the discussion of the consequences of vector (i.e. spin-1) bosons with non-z
 
 </td></tr>
 
-<tr><td>
 
-<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px">
-
-<a href="javascript:;" onmousedown="toggleDiv('energy_momentum');">Is energy a component of momentum?</a>
-<br/>
-<div id="energy_momentum" style="display:none">
-
-<p id="inline">
-How would you respond to the assertion that energy is the time component of momentum?<sup>[1][2]</sup> It might not at first glance seem reasonable; they are dimensionally different, after all. Also, we spent years learning about them and nobody ever mentioned that they could be the same thing. So what would it take to convince you of this assertion? The ideal approach is to start with a simple statement that everyone can agree on and then derive the conclusion through a set of logical steps. So let's give it a try.
-</p>
-
-<p id="inline">
-According to special relativity, we live in a 4 dimensional universe with one time dimension and three spatial dimensions. To identify a location within that 4-dimensional space, a 4 component position vector is needed, the &lsquo;4-position&rsquo;. Such a location is referred to as an event, because it identifies both a time and a place. The spatial components used will depend on the chosen coordinate system; for the present discussion, we will use cartesian coordinates, resulting in a 4-position (<i>t</i>, <i>x</i>, <i>y</i>, <i>z</i>). This approach uses the <a href="https://en.wikipedia.org/wiki/Four-vector">Minkowski 4-vector</a> formalism. These calculations are usually done using units in which <i>c</i> = 1, making time and space dimensionally equivalent, but if you would prefer to use SI units then the 4-position is (<i>ct</i>, <i>x</i>, <i>y</i>, <i>z</i>).
-</p>
-
-<p id="inline">
-Now let's take the 4-position vector and apply a Fourier transform to it. The Fourier transform is a linear operator, so it applies component-wise, with no mixing between components. So the Fourier transform of the 4-position is a 4-vector whose components are simply the Fourier transform pairs of the coordinates, (<i>&omega;</i>, <i>k<sub>x</sub></i>, <i>k<sub>y</sub></i>, <i>k<sub>z</sub></i>). This is called the 4-wavevector and it is the frequency space counterpart of the 4-position: a vector frequency, for which the time component is temporal frequency and the spatial components are spatial frequency.
-</p>
-
-<p id="inline">
-A frequency space equivalent of the Lorentz transformations could be defined: in the same sense that different observers in different inertial frames will disagree on what is time and what is space, they will also disagree on what is <i>&omega;</i> and what is <b>k</b>. Now all we have to do is take our 4-wavevector and multiply it by <i>&#295;</i> to get another 4-vector, for which the time component is <i>&#295;&omega;</i> and the spatial components are <i> &#295;</i><b>k</b>, explicitly: (<i>E</i>, <i>p<sub>x</sub></i>, <i>p<sub>y</sub></i>, <i>p<sub>z</sub></i>), the 4-momentum, with energy as the time component.
-</p>
-
-<p id="inline">
-Of course, it is in a sense an arbitrary decision to call it momentum; we could just as well say that momentum provides the spatial components of the 4-energy, or invent some new name altogether (conventionally and unimaginatively it is referred to as &ldquo;energy-momentum&rdquo;). And of course, different observers in different inertial frames will disagree on what is energy and what is momentum. We spent years learning about energy and momentum and yet no one ever thought to tell us that they were ultimately the same thing.
-</p>
-
-<p id="inline">
-Some may complain about the statement that energy and the other components of momentum are &ldquo;the same thing&rdquo; and with some justification. There are geometric differences described by Minkowski geometry; in particular, timelike vectors have real magnitudes and spacelike vectors have imaginary magnitudes (the square of the line element, d<i>s</i><sup>2</sup>, is negative for spacelike vectors). This does feel like a valid challenge, but remember that the Lorentz transformations tell us that observers in different inertial frames will disagree on what is time and what is space. So if you accept the principle of relativity (which we do), that there is no priviliged rest frame so all inertial frames are equivalent, then it is difficult to argue that time and space are not the same thing. They are different as observed from a given inertial frame, but somehow globally have to be the same thing. Any suggestions on untangling this semantic knot would be <a href="contact.html">very welcome</a>.
-</p>
-
-<p id="inline">
-None of this should prevent us from agreeing that energy is the time component of momentum. And now that we are (hopefully) aligned on that, we can start to ask other interesting questions. Time is the time component of position and energy is the time component of momentum, but what about all the other vectors; don't they have time components? And the answer is yes, they do! There is a set of underlying connections between physical quantities that we may have hitherto considered entirely separate.
-</p>
-
-<p id="inline">
-Where to begin? The next vector most people ask about is the force, which is natural given its importance for dynamical calculations. This is an easy one, due to its known relationship with momentum. According to Newton's 2<sup>nd</sup> law, for a force, <b>F</b>, and momentum, <b>p</b>, we have,
-
-$$\mathbf{F} = \frac{d\mathbf{p}}{dt}$$
-
-So the spatial components of the 4-force are just the time-derivatives of the spatial components of the 4-momentum. The time component of the 4-force is then the time derivative of the energy, otherwise known as power. The power dissipated in the application of a force is the time component of the force and again we could define relationships like the Lorentz transformations relating these components seen from the perspectives of observers in different inertial frames. There is a subtlety here, because we have to ask, whose version of time are we differentiating with respect to? The correct answer is that we differentiate with respect to <i>proper time</i>, which means time as measured on a clock following the path through spacetime of the point at which the force is applied. Proper time is represented by <i>&tau;</i>, where <i>&tau;</i> = <i>t&gamma;</i>. So the correct 4-force is <i>&gamma;</i>(<b>v</b>)(<i>P</i>, <i>F<sub>x</sub></i>, <i>F<sub>y</sub></i>, <i>F<sub>z</sub></i>), where <i>P</i> is the power transferred in the application of the force.
-</p>
-
-<p id="inline">
-More interesting connections come from electromagnetism, which has from the beginning been our best window into special relativity, due to the fundamentally relativistic nature of light. Consider the source of the electromagnetic field in Maxwell's equations. The source terms include either <i>&rho;</i> or <b>J</b>, the charge density and current density respectively. The components of the current density, <b>J</b>, can be thought of as flux of electric charge along each of the 3 spatial dimensions. Similarly, the charge density, <i>&rho;</i> can be thought of as the flux of electric charge along the time dimension. This turns out to be a more general result, important in the definition of the stress-energy tensor of general relativity: flux in time is equivalent to density in space. The units can be seen to match with the expected factor of <i>c</i>,
-
-$$\textnormal{Cm}^{-3}\times \textnormal{ms}^{-1} = \textnormal{Cm}^{-2}\textnormal{s}^{-1}.$$
-</p>
-
-<p id="inline">
-Another interesting example from the world of electromagnetism is the connection between the scalar and vector potentials. The scalar potential, <i>&phi;</i> is the familiar potential from electrostatics, used to calculate the electric field, <b>E</b>,
-
-$$\mathbf{E} = -\mathbf{\nabla}\phi$$
-
-The vector potential, <b>A</b>, is used to calculate the magnetic field,
-
-$$\mathbf{B} = \mathbf{\nabla}\times \mathbf{A}$$
-
-By now, it probably comes as no surprise to hear that the scalar and vector potentials provide the time and space components respectively of a 4-potential. As expected the units are different by a factor of velocity.
-</p>
-
-<p id="inline">
-It is interesting to ponder the different levels of mental gymnastics needed to integrate these relationships into our world view. The idea that time and space are fundamentally the same thing is just baffling, entirely contradictory to our experience. Accepting energy as a component of momentum feels like less of a jump, given that the definition of energy has always been something of an enigma, although it remains perplexing that we were never taught this during years of studying physics. And then there is the simple fact that charge and current are the same thing, viewed from different inertial frames, which is just obvious.
-</p>
-
-<p id="inline">
-<ol>
-	<li style="line-height:150%">Six not so easy pieces, 4<sup id="list">th</sup> Ed. (2011), Richard P. Feynman, 978-0465025268<br/>
-See the discussion of the energy-momentum 4-vector on page 102.</li>
-	<li style="line-height:150%">The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup id="list">th</sup> Ed. (2007), Roger Penrose, 0224044478<br/>
-See the discussion of 4-vectors on page 433 and the following pages.</li>
-</ol>
-</p>
-
-</div>
-</div>
-
-</td></tr>
 
 <tr><td>
 
 <div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px">
 
-<a href="javascript:;" onmousedown="toggleDiv('source_of_gravity');">What is the source of gravity in general relativity?</a>
+<a href="javascript:;" onmousedown="toggleDiv('mass');">Does kinetic energy exert a gravitational attraction?</a>
 <br/>
-<div id="source_of_gravity" style="display:none">
-
-<p id="inline">
-If you haven't ready the article, &ldquo;Is energy a component of momentum?&rdquo;, then I highly recommend doing so before continuing.
-</p>
-
-<p id="inline">
-In 1686, Isaac Newton published his universal law of gravitation, in which mass is the source of gravity. When Einstein published his work on special relativity in 1905, the world discovered that mass and energy are actually the same thing. In 1907, Minkowski published his work on special relativity, including the startling insight that energy is the time component of momentum. So where does that leave us? Is momentum the source of gravity?
-</p>
-
-<p id="inline">
-Fortunately Einstein continued thinking about the problem and in 1916 he astonished the world with his general theory of relativity. The source of the gravitational field in general relativity is indeed the energy-momentum 4-vector, but there is more to it than that. The simplest way to understand this is through comparison with the source of the electromagnetic field in Maxwell's equations. Here we will take advantage of the illuminating, but often under-appreciated parallels between gravity and electromagnetism.
-</p>
-
-<p id="inline">
-The source of the electromagnetic field is of course electric charge, <i>q</i>; however, it is not <i>q</i> but <i>&rho;</i> and <b>J</b> that appear as the sources in Maxwell's equations, the charge density and current density respectively. Having hopefully read the article, &ldquo;Is energy a component of momentum?&rdquo;, you will already know that <i>&rho;</i> and <b>J</b> provide the time and spatial components respectively of the current density 4-vector. Current density is simply flux of electric charge (charge per unit time per unit area) and flux in time corresponds with density in space.<sup>[1]</sup>
-</p>
-
-<p id="inline">
-How does it look if we apply the same principle to gravity, treating energy-momentum as the gravitational &ldquo;charge&rdquo;? An obvious difference is the vector nature of gravitational charge, so we expect a tensor source term representing the flux of the 4 components of energy-momentum along each of the 4 dimensions of space-time.
-
-$$
-\require{colortbl}\require{color}
-\left(\begin{array}{cccc}
-    \rowcolor{yellowgreen}
-    \cellcolor{salmon} T^{00}   & T^{01}   & T^{02}  & T^{03}  \\
-    \rowcolor{yellow}
-    \cellcolor{yellowgreen} T^{10}   & \cellcolor{skyblue} T^{11}   & T^{12}  & T^{13}  \\
-    \rowcolor{yellow}
-    \cellcolor{yellowgreen} T^{20}   & T^{21}   & \cellcolor{skyblue} T^{22}  & T^{23}  \\
-    \rowcolor{yellow}
-    \cellcolor{yellowgreen} T^{30}   & T^{31}   & T^{32}  & \cellcolor{skyblue} T^{33}  \\
-\end{array}\right)
-$$
-
-This is what is referred to as the stress-energy tensor, for reasons that will become clear. The elements, <i>T</i><sup>&mu;&nu;</sup>, represent the fluxes of the four components of energy-momentum along each of the four dimensions of space-time. Here the index &mu; labels the flux directions and &nu; labels the components of energy-momentum, with the values 0-3 identifying time and the 3 spatial axes, which we will call <i>x</i>, <i>y</i> and <i>z</i>, respectively.
-</p>
-
-<p id="inline">
-Starting with the top row, then, the first element is the flux of energy along the time axis, also known as energy density (red). This component on its own corresponds with Newtonian gravity, with mass (energy) density as the source. The remaining three elements of the first row are the densities of the 3 spatial components of linear momentum (green). The concept of density of momentum is not immediately intuitive, but it turns out that density of the <i>k</i><sup>th</sup> component of linear momentum is identically equal to the flux of energy along the <i>k</i>-axis (green): <i>T</i><sup>0<i>k</i></sup> = <i>T</i><sup><i>k</i>0</sup> for <i>k</i> = 1-3.
-</p>
-
-<p id="inline">
-There remains to describe the 3 &times; 3 matrix representing the flux of the 3 spatial components of momentum along each of the 3 spatial axes. But what is flux of momentum? Flux is flow of something per unit time, per unit area. We know that momentum per unit time is force and force per unit area is pressure, or more generally stress (pressure being the isotropic special case of stress). So the the remaining 3 &times; 3 elements of the stress-energy tensor are in fact the <a href="https://en.wikipedia.org/wiki/Cauchy_stress_tensor">stress tensor</a>, familiar from the analysis of deformation in materials. Flux of the <i>i</i><sup>th</sup>-component of momentum along the <i>i</i>-axis corresponds with the <i>i</i><sup>th</sup>-component of force due to pressure (blue). Flux of the <i>i</i><sup>th</sup>-component of momentum along the <i>j</i>-axis, with <i>i</i> &ne; <i>j</i>, corresponds with a component of shear stress (yellow). 
-</p>
-
-<p id="inline">
-It might come as a surprise to learn that the stress tensor, extended into 4 dimensions, is the source of gravity; it certainly surprised me. Nonetheless, the connection is entirely real. In conditions we normally encounter, the contribution of pressure/stress to gravitational attraction is negligible; however, in the interior of a large star undergoing gravitational collapse, the extreme pressure, which might be expected to support the star, adds a significant additional gravitational pull, leading to runaway gravitational collapse.<sup>[2]</sup> It all feels a far cry from Newton's not entirely universal law of gravitation.
-</p>
-
-
-<p id="inline">
-<ol>
-    <li style="line-height:150%">The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup id="list">th</sup> Ed. (2007), Roger Penrose, 0224044478<br/>
-See the discussion of the interpretation of the energy-momentum tensor and the analogy with the sources in Maxwell's equations on page 456.</li>
-    <li style="line-height:150%">The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup id="list">th</sup> Ed. (2007), Roger Penrose, 0224044478<br/>
-See the discussion of the implications of pressure as a source of the gravitational field for a collapsing star on page 463.</li>
-</ol>
-</p>
-
-</div>
-</div>
-
-</td></tr>
-
-<tr><td>
-
-<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px">
-
-<a href="javascript:;" onmousedown="toggleDiv('potato_rest_mass');">What fraction of a kg of potatoes is particle rest mass?</a>
-<br/>
-<div id="potato_rest_mass" style="display:none">
-
-<p id="inline">
-The choice of potatoes is of course arbitrary. When I first starting discussing this with people, I used the mass of the Earth as an example, but I decided to  use something more immediately familiar, hence potatoes. In particular, I wanted to make clear that the mass I am talking about is truely the mass we measure (indirectly via weight) when we put the potatoes on a balance. In fact, any material composed of atoms and molecules would do.
-</p>
-
-<p id="inline">
-Ultimately this is a question about the masses of protons and neutrons, which make up the overwhelming majority of the masses of atoms and molecules. So we can boil down the title question to the perhaps more tractable question: what fraction of the masses of protons and neutrons are due to the rest masses of their constituent quarks?
-</p>
-
-<p id="inline">
-The clue is in the fact that protons and neutrons have almost identical masses, even though their quark composition is different.<sup>[1]</sup> The neutron mass, <i>m</i><sub>n</sub>, is greater than the proton mass, <i>m</i><sub>p</sub>, by approximately 1 part in 1000. But the neutron is composed of two down-quarks and an up-quark, while the proton is composed of two up-quarks and a down-quark, and the down-quark mass, <i>m</i><sub>d</sub>, is approximately double the up-quark mass, <i>m</i><sub>u</sub>.
-
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Neutron">\(m_\textnormal{n} = 939.56542052(54)\textnormal{ MeV}\)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Proton">\(m_\textnormal{p} = 938.27208816(29)\textnormal{ MeV}\)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Down_quark">\(m_\textnormal{d} = 4.7^{+0.5}_{-0.3}\textnormal{ MeV}\)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Up_quark">\(m_\textnormal{u} = 2.2^{+0.5}_{-0.4}\textnormal{ MeV}\)</a></li>
-</ul>
+<div id="mass" style="display:none">
 
 <p>
-The neutron and proton masses are very precisely measured quantities, but the quark masses are not directly observable and have to be inferred through processes that result in a large fractional uncertainty. Nonetheless, the ratio <i>m</i><sub>u</sub>/<i>m</i><sub>d</sub> is thought to be <a href="https://pdg.lbl.gov/2015/tables/rpp2015-sum-quarks.pdf">in the region of 0.5, with reasonable confidence</a>. <b>Added note</b>: a lattice QCD approach <a href="https://www.science.org/content/article/mass-common-quark-finally-nailed-down">demonstrated in 2010</a> appears to have dramatically reduced the uncertainty on the light quark masses, finding a ratio of 0.420.<sup>[2]</sup>
+We can generalise the title question slight by simply asking, is the kinetic energy of a particle / system / object part of it's mass? In a sense this is a matter of definition and it has become conventional to use the word mass to refer only to mass as observed from the rest frame. A potential problem with this definition is that it can obscure the true meaning of mass-energy equivalence. Mass is quantity that measures two things: inertia and gravity. All energy has inertia and all energy is a source of the gravitational field, so all energy is mass, including kinetic energy.
 </p>
 
-<p id="inline">
-For the purpose of illustration, let's try the calculation using a ratio of precisely 0.5 and further assuming that the contribution on top of the elementary particle rest masses, &Delta;, is equal for protons and neutrons. The rationale for this latter assumption is that the strong force is symmetric under exchange of protons and neutrons, only electromagnetism breaks the symmetry. I do realise that this does not fully motivate the assumption, because it assumes that the strong force is the dominant effect, which has not been shown. It does turn out to be the case and it simplifies the calculation, so I hope you can forgive me.
+<!--The equivalence of mass and energy was one of the great insights that came with Einstein's introduction of special relativity in 1905-->
 
-$$m_\textnormal{d} = 2m_\textnormal{u}$$
-
-$$
-m_\textnormal{n} = m_\textnormal{u} + 2m_\textnormal{d} + \Delta = 5m_ \textnormal{u} + \Delta
-$$
+<p>
+The relativistic expression for the total energy, <i>E</i>, is the energy-momentum relation:
 
 $$
-m_\textnormal{p} = 2m_\textnormal{u} + m_ \textnormal{d} + \Delta = 4m_\textnormal{u} + \Delta
+E = \sqrt{p^2c^2 + m^2c^4}.
 $$
 
-We can now use the known <i>m</i><sub>n</sub>/<i>m</i><sub>p</sub> ratio to establish the relationship between &Delta; and <i>m</i><sub>u</sub>.
-
-$$m_\textnormal{n} = cm_\textnormal{p}$$
-
-$$5m_\textnormal{u} + \Delta = c(4m_\textnormal{u} + \Delta)$$
+In the rest frame we have <i>p</i> = 0, giving:
 
 $$
-\Delta = \frac{5 - 4c}{c-1} m_\textnormal{u} \equiv k m_\textnormal{u}
+E(p=0)=E_0 = mc^2,
 $$
 
-We are now ready to address the title question, calculating the fraction \(\mathcal{F}\) of a kg of potatoes composed of particle rest mass. We will use the further assumption that potatoes contain an equal number of protons and neutrons (a good approximation for the light elements found in organic matter).
+which is Einstein's famous equation as he originally introduced it. In fact, even with non-zero momentum the equation holds with the introduction of relativistic mass, <i>m</i><sub>rel</sub>:
 
 $$
-\mathcal{F} = \frac{9m_\textnormal{u}}{9m_\textnormal{u} + 2\Delta} = \frac{9}{9+2k}
+E = \sqrt{p^2c^2 + m^2c^4} = m_\textnormal{rel}c^2.
 $$
 
-For a neutron mass greater than the proton mass by 1 part in 1000, as observed, we have <i>c</i> = 1.001, corresponding to <i>k</i> = 996 and hence \(\mathcal{F} = 9/2001\), or approximately 0.5%. Explicitly stated, if we add up the rest masses of all the elementary particles in a kg of potatoes, they only contribute on the order of 1% of the actual mass!
+Relativistic mass as a concept is not favoured by most authors these days and often not introduced in special relativity courses, but the form can be easily determined from the above equation and using <i>p</i>&nbsp;=&nbsp;<i>m</i><sub>rel</sub><i>v</i>:
+
+$$
+m_\textnormal{rel} = \frac{m}{\sqrt{1 - \frac{v^2}{c^2}}}
+$$
+
+Another way to think of relativistic mass is as the sum of the rest mass of a system and its kinetic energy. This can be seen by substituting the expression for relativistic mass into the equation for total energy:
+
+$$
+E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}.
+$$
+
+Expanding the square root using the <a href="https://en.wikipedia.org/wiki/Binomial_theorem#Newton's_generalized_binomial_theorem">generalised binomial theorem</a>, we have:
+
+$$
+E = mc^2\left(1 + \frac{v^2}{c^2} + \frac{3v^4}{8c^4} + \mathcal{O}\left[\left(\frac{v}{c}\right)^6\right]\right).
+$$
+
+Multiplying through the first two terms we see that the first term is the rest energy, while the second term is the Newtonian expression for kinetic energy: 
+
+$$
+E = mc^2 + \frac{1}{2}mv^2 + mc^2\left(\frac{3v^4}{8c^4} + \mathcal{O}\left[\left(\frac{v}{c}\right)^6\right]\right).
+$$
+
+In fact, all terms other than the rest energy term are part of the kinetic energy, as can be seen from the fact that they drop to zero in the rest frame. The third and subsequent terms are relativistic corrections to the kinetic energy that only give a significant contribution as <i>v</i>&nbsp;&rarr;&nbsp;<i>c</i>.
 </p>
 
-<p id="inline">
-So where does the rest of the mass come from? We know that all mass is energy, so we're just looking for sources of energy. We want to add up all the kinetic and potential energy in the potatoes (yes, they are all part of the mass). We generally share an inertial frame with potatoes while weighing them, but there is still kinetic energy in the thermal vibrations within the potatoes; however, this will not be a significant contribution at any remotely plausible temperature. Potential energy is associated with interactions between particles and fields. It turns out that the overwhelming majority of the mass of a kg of potatoes is due to the potential energy of the colour charged quarks and gluons interacting with the strong field within the protons and neutrons.<sup>[3]</sup> It is worth remembering this when you hear that interaction with the Higgs field is the &ldquo;origin of mass&rdquo;.
-</p>
+<blockquote>
+&ldquo;Einstein’s equation (<i>E</i>&nbsp;=&nbsp;<i>mc</i><sup>2</sup>), which says in part that mass and energy can be converted into each other...&rdquo;<sup>[1]</sup><br/>
+US Department of Energy - Office of Science
+</blockquote>
+
+<blockquote>
+&ldquo;In other words, <b>mass is not conserved</b>. The mass of clay after the collision is larger than the mass of of clay before the collision. Total energy can only be conserved if total energy is converted into an &lsquo;equivalent&rsquo; amount of mass.&rdquo;<sup>[2]</sup><br/>
+Westminster College (bold text in original)
+</blockquote>
+
+
+
+Deutsches Elektronen-Synchrotron (DESY)
+
+Even the entirely standard description of a photon as a <i>massless particle</i> is highly misleading; photons carry inertia and exert a gravitational attraction. The fact that if you were to accelerate into the rest frame of a photon, its mass would drop to zero
+
+https://www.physik.uni-wuerzburg.de/fileadmin/11030300/_imported/fileadmin/tp3/ThermoEDynamik/relMass.pdf
 
 <p id="inline">
 <ol>
-    <li style="line-height:150%"> <a href="https://www.symmetrymagazine.org/article/where-does-mass-come-from">Where does mass come from?</a><br/>
-Symmetry Magazine, 12-May-2016<br/>
-Accessed 30-Mar-2022
-</li>
-    <li style="line-height:150%"> <a href="https://doi.org/10.1103/PhysRevLett.104.132003">Precise Charm to Strange Mass Ratio and Light Quark Masses from Full Lattice QCD</a><br/>C. T. H. Davies, C. McNeile, K. Y. Wong, E. Follana, R. Horgan, K. Hornbostel, G. P. Lepage, J. Shigemitsu, and H. Trottier (HPQCD Collaboration)<br/>
-Phys. Rev. Lett. <b>104</b>, 132003 – Published 31 March 2010
-</li>
-    <li style="line-height:150%">The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup id="list">th</sup> Ed. (2007), Roger Penrose, 0224044478<br/>
-See the comment on the strong interaction contribution to hadron masses on page 645.</li>
+    <li style="line-height:150%"><a href="https://www.energy.gov/science/doe-explainsnuclear-fusion-reactions">Title</a><br/>
+        Author<br/>
+        Reference<br/>
+    </li>
+    <li style="line-height:150%"><a href="https://cs.westminstercollege.edu/~ccline/courses/phys301/Knight/Knight_37-10.pdf">Title</a><br/>
+        Author<br/>
+        Reference<br/>
+    </li>
+    <li style="line-height:150%"><a href="https://www.physik.uni-wuerzburg.de/fileadmin/11030300/_imported/fileadmin/tp3/ThermoEDynamik/relMass.pdf">In defense of relativistic mass</a><br/>
+        T. R. Sandin<br/>
+        American Journal of Physics <b>59</b> 1032 (1991)<br/>
+    </li>
 </ol>
 </p>
 
 </div>
 </div>
-
 </td></tr>
+
+
 
 
 <tr><td>
@@ -504,248 +300,7 @@ The take-home message is simple. All energy of any form has inertia and exerts a
 
 </td></tr>
 
-<tr><td>
 
-<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px">
-
-<a href="javascript:;" onmousedown="toggleDiv('bound_system');">How can a bound system have higher mass than its isolated constituents?</a>
-<br/>
-<div id="bound_system" style="display:none">
-
-<p>
-If you haven’t already read “What is mass?” and “What fraction of a kg of potatoes is particle rest mass?”, then I suggest doing so before continuing. Readers who have read the aforementioned pieces may have noticed an implicit contradiction. For the sake of clarity, I will summarise the contradictory conclusions here before attempting to explain and resolve the contradiction.
-</p>
-
-<p>
-In “What is mass?” we considered the case of binding energy in a hydrogen atom. Defining binding energy as the work done to assemble the constituent particles from infinity at constant velocity (any acceleration would require additional work to overcome inertia) gives a negative binding energy for the attractive 1/<i>r</i> potential in a hydrogen atom. As a result, the mass of the atom is lower than the isolated proton and electron. In “What fraction of a kg of potatoes is particle rest mass?” we showed that the masses of the constituent (valence) quarks in protons and neutrons, and hence in all matter composed of atoms and molecules, is only on the order of 1% of the total mass.
-</p>
-
-<p>
-By the definition of binding energy given above, a bound system must have lower mass than its constituent particles at infinite separation. And yet a proton is a stable bound system of particles with mass far higher than the rest masses of its constituent particles. In pondering this conundrum, I always felt that the resolution was likely to come from improving my understanding of the strong interaction, given that electromagnetic interactions in a hydrogen atom are much more familiar. Nonetheless, the root of the conundrum seemed to go beyond any specific force and relied simply on the fact that force points down the gradient of potential energy: if energy (and hence mass) is lower at infinite separation, then surely the interaction must be repulsive?
-</p>
-
-<p>
-An important distinction between protons (or other hadrons) and systems bound by the electromagnetic force is that the constituent quarks have never been observed in isolation. This fact has led to a hypothesis that quarks may be permanently confined within hadrons.
-</p>
-
-<p>
-There is convincing experimental evidence for a linear rise in potential energy, rising above the rest energy of the isolated constituents, as the quarks are separated. This evidence comes from the so-called charmonium spectrum.<sup>[1][2]</sup> Charmonium is a heavy meson composed of a charm quark and charm antiquark. The ground state of charmonium is the famous <a href="https://en.wikipedia.org/wiki/J/psi_meson">J/&psi; meson</a> first observed in 1974, with a mass of 3.0969 GeV/<i>c</i><sup>2</sup>. As particle accelerators achieved ever higher energies, additional new mesons were observed that were ultimately understood to be excited states of charmonium. Representing these states graphically in terms of energy and angular momentum produces something that looks reminiscent of the familiar atomic hydrogen energy-level diagram, but with clear distortions. The distribution of the energy levels is consistent with a function for potential energy, <i>U</i> that combines an attractive 1/<i>r</i> potential at short range with a linear rise in <i>r</i> at larger separations, the so-called <a href="https://en.wikipedia.org/wiki/Cornell_potential">Cornell potential</a>:
-
-$$
-U = -\frac{4}{3}\frac{\alpha_s}{r} + \sigma r
-$$
-
-Where &alpha;<sub>s</sub> is the quantum chromodynamics (QCD) running coupling (the 1/<i>r</i> term here is explicitly part of the strong interaction and is not related to the attractive electromagnetic potential that exists independently of this) and <i>&sigma;</i> is referred to as the QCD string tension. When it was developed in the 1970s, the Cornell potential was entirely emipical, based on a fit to the observed charmonium energy levels; however, the form has since been computed from first principles using <a href="https://en.wikipedia.org/wiki/Lattice_QCD">lattice QCD</a>. Note that the radial separation in the ground state is already sufficient to be dominated by the linear term, giving a positive contribution to total energy from the strong force potential energy.<sup>[3]</sup>
-</p>
-
-<p>
-For an intuitive description of what this means for the behaviour of the strong field, theorists developed the concept of the ‘flux tube’, flux here referring to classical field lines. The electric field lines emerging from a proton point radially outwards. The electric field around a proton points outwards along a field line, with a magnitude proportional to the local density of field lines. This is consistent with the 1/<i>r</i><sup>2</sup> dependence of electric field strength because the density of field lines is normalised over area on a sphere of radius <i>r</i>, which is proportional to <i>r</i><sup>2</sup>. The corresponding strong force field lines, connecting colour charged particles, are stretched into a bundle of parallel lines as the charges are separated, forming a tube with a constant density of field lines. This behaviour results from the non-Abelian nature of quantum chromodynamics, leading to self-interacting gauge bosons; the colour-charged gluons all attract each other, leading to the compact flux tube geometry. The constant field implied by the flux tube description results in a constant force, independent of separation. A constant force corresponds with potential energy varying linearly with separation, consistent with the charmonium spectrum, and equivalently a constant rate of work done (at constant velocity) per unit distance.
-</p>
-
-<p>
-It is expected that once the total energy rises to twice the J/&psi; meson energy, an additional charm quark-antiquark pair will be produced, resulting in a pair of ground state charmonium mesons. Charm quarks have a large rest mass (1.275 GeV/<i>c</i><sup>2</sup>), greater than the mass of the proton and more than 500 times that of the up quark, so current particle accelerators have not achieved the energies required for this. Beyond the limit of the observed charmonium spectrum, there is currently no observational evidence for the behaviour of the potential energy curve. Above the pair production threshold it may not be observable even in principle. Note that high mass of the charm quark makes charmonium amenable to calculations based on well-understood, non-relativitic quantum mechanics, a fact that been of great value to theorists trying to derive understanding of the basic interactions of quarks.
-</p>
-
-<p>
-So where does all this leave us with the title question? If the potential energy curve can be taken to drop to zero (equal to the constituent rest masses) at infinity, then the contradiction can be resolved with a simple redefinition of binding energy: the work done to assemble the particles from the potential energy maximum at constant velocity; for the hydrogenic case this redefinition makes no difference. For the hypothesised linear rise to a large positive energy before dropping to zero at infinity, the bound state is necessarily a metastable state, subject to tunnelling through the potential barrier to leave free quarks. Indeed, any hadron that did make its way past the potential barrier, either through tunnelling or acquisition of sufficient kinetic energy to overcome the barrier, would experience a repulsive interaction. The fact that no free quarks have ever been observed may simply reflect a vanishingly low tunnelling rate due to a high potential barrier.
-</p>
-
-<p>
-An alternative interpretation is that the potential energy curve just keeps on rising, meaning that there really is no way to escape the potential well because the potential energy rises to infinity at infinite separation. This interpretation would be consistent with the permanently confined quark hypothesis. There is no violation of conservation of energy here; the potentially unbounded rise in energy is only accessible to the extent of the work that can be done on the system in pushing it apart. The case of continuously rising potential energy does not require any redefinition of binding energy, but it loses the satisfying identification of infinite separation with free elementary particles.
-</p>
-
-<p>
-Between these two limiting cases, there are intermediate cases, for which the system asymptotes to some finite energy at large separation. In particular, this includes the monotonic case, with no repulsive interaction, just an attractive force that asymptotes to zero, which would constitute a stable bound state. All these cases are equally consistent with experimental observations to date. I find the case of dropping to zero at infinite separation the most intuitively plausible, but I don’t claim that as any kind of evidence.
-</p>
-
-<p>
-Has the contradiction been resolved? There are clearly still gaps in our knowledge and we are faced with the unpalatable prospect of truly unknowable aspects of the physics. Nonetheless, I feel that at its core the contradiction has been resolved: a system will remain effectively bound if the potential energy barrier at larger separations is sufficiently high, whatever the form of the potential as the separation tends to infinity. The conclusions drawn for the hydrogenic case in “What is mass?” were based on the assumption that the whole of the potential energy curve for a bound system must be negative and we have good evidence that that is not the case for strong force interactions.
-</p>
-
-<ol>
-    <li style="line-height:150%">The Ideas of Particle Physics, 4<sup id="list">th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402<br/>
-        See chapter 35 Quarks and Charm on page 171 and the following pages.</li>
-    <li style="line-height:150%"><a href="https://doi.org/10.1103/RevModPhys.90.015003">Nonstandard heavy mesons and baryons: Experimental evidence</a><br/>
-        S. L. Olsen, T. Skwarnicki and D. Zieminska<br/>
-        Rev. Mod. Phys. <b>90</b> 015003 (2018)</li>
-    <li style="line-height:150%"> <a href="https://doi.org/10.1016/S0370-1573(00)00079-X">QCD forces and heavy quark bound states</a><br/>G. S. Bali<br/>
-        Phys. Rep. <b>343</b> [1-2] 1-136 (2001) [<a href="https://arxiv.org/abs/hep-ph/0001312">arXiv</a>]
-    </li>
-</ol>
-
-</div>
-</div>
-</td></tr>
-
-
-
-<tr><td>
-
-<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px">
-
-<a href="javascript:;" onmousedown="toggleDiv('rest_mass');">How does the Higgs field generate particle rest mass?</a>
-<br/>
-<div id="rest_mass" style="display:none">
-
-<p>
-I have heard and read various descriptions of how the Higgs field generates particle rest mass.<sup>[1][2][3]</sup> It is a complex topic, so it is perhaps unsurprising that none of them struck me as particularly intuitive, but I do feel that there is a simple logical argument that can motivate the principle from some basic, well-founded assumptions. Here I have used the qualifier <i>particle</i> rest mass to indicate that we are talking about an entity with no observed internal degrees of freedom. Composite bodies, such as molecules, mangos and mountains can still have kinetic energy in the rest frame due to internal vibrations. Subsequent use of the term rest mass in this piece should be interpreted as particle rest mass.
-</p>
-
-<p>
-The argument I shall present here is based on three founding assumptions that I hope and expect will be uncontroversial. The assumptions are as follows:
-
-<ol>
-<li><i>E</i> = <i>mc</i><sup>2</sup><br/><br/>
-All energy is mass and all mass is energy. If you haven’t thought much about the implications of this, then I strongly recommend reading the piece, &ldquo;<i>What is mass?</i>&rdquo; before continuing. In searching for the source of particle rest mass, we are searching for a source of energy consistent with the properties of rest mass.
-</li><br/>
-
-<li>All energy is either kinetic or potential energy<br/><br/>
-Bulk motion, heat and (less obviously) light are all examples of kinetic energy. Chemical, elastic, gravitational and nuclear are examples of potential energy. Some are combinations of the two, such as sound and other compressive waves, where energy is alternately stored as potential energy by compression and released as kinetic energy by rarefaction. Given that rest mass by definition exists in the rest frame of a particle, rest mass cannot be kinetic energy and therefore must be potential energy.
-</li><br/>
-
-<li>Potential energy exists due to the interactions of particles with fields<br/><br/>
-If an electron (or other charged particle) is placed in an electric field, it has an associated potential energy that will be reflected by an increase in particle mass. Because rest mass exists even in the absence of all previously known fields, we can infer that there must be another, previously unknown field that is the source of rest mass.
-</li>
-</ol>
-
-What would the properties of this field be? 
-</p>
-
-<p>
-<ul>
-<li><p>It must permeate all space</p>
-Rest mass exists everywhere: an isolated electron, far from any other particles that could be the source of a field, would still have its rest mass.
-</li>
-
-<li><p>It must take the same value everywhere</p>
-Particle rest mass is an invariant quantity, seen to take the same value for a given particle everywhere in space, irrespective of environment or inertial frame.
-</li>
-
-<li><p>It must have zero spin</p>
-Non-zero spin would give the field a polarisation that would locally break the observed isotropy of empty space, just as an electric field breaks the isotropy of space near an electric charge.
-</li>
-
-<li><p>It must have a coupling proportional to particle rest mass</p>
-Particle rest mass is the particle coupling to the field (the &ldquo;charge&rdquo;) multiplied by the constant field value, so the coupling effectively is the rest mass.
-</li>
-</ul>
-</p>
-
-<p>
-It turns out that such a field does exist and it is what we call the Higgs field. While most fields have a minimum of energy (the ground state) at zero field, the Higgs field has the famous Mexican hat potential, with a large energy at zero field. The minimum energy ground state (actually a locus of degenerate ground states) is associated with a non-zero field value. In the first moments after the big bang, the energy density was high enough to sustain the symmetric, excited, zero-field state and all particles had zero rest mass. As the universe expanded, the falling energy density rapidly caused the field to decay to a non-zero field ground state, breaking the symmetry that existed in the early universe and giving particles the rest masses that we observe today. As expected, a field that permeates all of space and takes the same value everywhere. Note that the potential energy associated with the Higgs field never applies a force: force points down the gradient of potential energy and there are no gradients in the Higgs field because it takes the same value everywhere.
-</p>
-
-<p>
-The famous Higgs boson is a quantum excitation of the Higgs field and observations of particle collisions producing Higgs bosons at the CERN Large Hadron Collider confirm that it is indeed a spin zero, scalar particle. The Higgs boson is highly unstable, with a lifetime on the order of 10<sup>-22</sup> s, but its presence can be inferred from observations of the decay products. If particle coupling to the Higgs field essentially is rest mass, then it might be expected that the dominant decay mode would be to the particle with the largest rest mass, i.e. the top quark. In fact, this decay mode is energetically forbidden because the top quark has a larger rest mass than the Higgs. It further transpires that production of quarks in Higgs decays must create quark-antiquark pairs, so the top-antitop pair is well out of reach. The next largest rest mass is the bottom quark and in fact the dominant decay mode of the Higgs is to a bottom-antibottom pair.<sup>[4]</sup>
-</p>
-
-<p>
-So is generation of rest mass via interactions with the Higgs field complicated? This explanation glosses over <i>a lot</i> of details, but I have found it a useful way to gain some intuitive understanding of the basic principle. An important take-home message is that rest mass is just another form of potential energy that happens to be generated through interactions with a field that takes the same value everywhere. In that sense, it can be seen as a unifying and simplifying discovery.
-</p>
-
-
-<ol>
-	<li style="line-height:150%">The Ideas of Particle Physics, 4<sup>th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402<br/>
-	See section 21.3 on page 106, Spontaneous Breaking of Local Symmetry - the Higgs Mechanism
-	</li>
-
-	<li style="line-height:150%"><a href=”https://www.symmetrymagazine.org/article/where-does-mass-come-from”>Where does mass come from?</a><br/>
-	D. Kwon<br/>
-	Symmetry Magazine, 12-May-2016 (Accessed 10-Oct-2022)
-	</li>
-
-	<li style="line-height:150%"><a href=”http://dx.doi.org/10.1016/j.nuclphysbps.2015.09.463”>The Higgs mechanism for undergraduate students</a><br/>
-	G. Organtini<br/>
-	Nuclear and Particle Physics Proceedings <b>273</b>–<b>275</b> 2572–2574 (2016)
-	</li>
-
-	<li style="line-height:150%">The Ideas of Particle Physics, 4<sup>th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402<br/>
-	See section 41.2 on page 204, Decays of the Higgs Boson.
-	</li>
-</ol>
-
-
-</div>
-</div>
-</td></tr>
-
-
-
-<tr><td>
-
-<div style="border:1px solid; padding:7px; width:85%; margin-bottom:0px">
-
-<a href="javascript:;" onmousedown="toggleDiv('matter_radiation');">What is the difference between matter and radiation?</a>
-<br/>
-<div id="matter_radiation" style="display:none">
-
-<p>
-An important parameter studied by cosmologists is the ratio of radiation to matter in the energy content of the universe. Matter is traditionally described as a <a href="https://en.wikipedia.org/wiki/Matter">substance that has mass</a>, which can be confusing because, by mass-energy equivalence, we know that all energy is mass and all mass is energy (for further discussion of this, see the piece &ldquo;What is mass?&rdquo;). A better definition casts radiation as composed of relativistic particles (<i>v</i> &sim; <i>c</i>), while matter is composed of non-relativistic particles (<i>v</i> &Lt; <i>c</i>). Radiation is then taken to include photons and neutrinos, while matter includes atoms and molecules, gas and and dust.
-</p>
-
-<p>
-Why is this an interesting distinction to make from the point of view of cosmology? Cosmology is generally concerned with gravity and a given quantity of energy will impart the same gravitational attraction whether it is matter or radiation. The difference is important when the region of space in which the energy is contained expands, as all space is expanding. For a region of space containing matter and characterised by a length parameter, <i>a</i>, the energy (mass) density will drop off like 1/<i>a</i><sup>3</sup> as the region expands. This is unsurprising and is essentially just the definition of density as a quantity normalised by volume. For the same region of space containing the same total energy composed of radiation, the energy density will drop off like 1/<i>a</i><sup>4</sup> as the region expands.<sup>[1]</sup>
-</p>
-
-<p>
-Why the difference? The additional factor of 1/<i>a</i> is due to the redshift as the wavelength of the radiation increases. Consider a distribution of photons in the space; the density of photons drops off like 1/<i>a</i><sup>3</sup>, while the energy, <i>E</i>, of each photon is inversely proportional to the wavelength, <i>&lambda;</i>.
-
-$$
-E = \frac{h}{\lambda}
-$$
-
-Where <i>h</i> is Planck's constant and <i>&lambda;</i> &prop; <i>a</i>. So the evolution of the expanding universe under the influence of the mutual gravitational attraction of its contents will depend on the ratio of radiation to matter, which will itself evolve, decreasing as the universe expands because the density of radiation drops off faster than the density of matter.
-</p>
-
-<p>
-That all makes sense and provides a satisfying answer to the title question. Nonetheless, a puzzle remains. The traditional description of matter as a substance with mass suggests that the crucial underlying difference between the particles comprising radiation and those comprising matter is rest mass. It is standard terminology now to refer to particle rest mass, <i>m</i><sub>0</sub>, as simply &ldquo;mass&rdquo; (a point that I continue to find highly unsatisfactory). Certainly rest mass as fraction of total mass does distinguish photons, with zero rest mass, and neutrinos, with very low rest mass, from the contributions of the large rest masses of the particles making up matter. The problem with this is that it gives too much weight to the concept of rest mass, which is not an intrinsic property of elementary particles.
-</p>
-
-<p>
-The total mass of an elementary particle is equal to its total energy, including all kinetic and potential energy, divided by <i>c</i><sup>2</sup>. The total potential energy is the sum of the contributions due to all the fields that the particle couples to. As an example, a charged particle placed in an electromagnetic field will have an associated electromagnetic potential energy that contributes to the particle mass. That potential energy is not an intrinsic property of the particle because it varies with the magnitude of the field. The intrinsic particle property is the coupling to the field, the electric charge. The same is true for colour-charged particles in a strong field, where the intrinsic property is the colour charge, rather than the strong field contribution to the potential energy. For the case of rest mass, the intrinsic particle property is the coupling to the Higgs field, but the rest mass itself is an extrinsic property dependent on the magnitude of the Higgs field. It so happens that the Higgs field takes the same magnitude everywhere in space, which is why rest mass appears to be an intrinsic, invariant property of elementary particles. See the piece &ldquo;What is rest mass?&rdquo; for more details.
-</p>
-
-<p>
-It seems rather arbitrary to pick out one of the contributions to a particle's potential energy and claim that it is the defining property for this effect. A more reasonable property would seem to be the total potential energy compared with the kinetic energy. For the extreme case of zero rest mass, as is the case for photons (zero coupling to the Higgs field), there is no potential energy so the total energy of a photon is purely kinetic energy. There are various ways to see why this must be the case, but probably the simplest is just to recognise that the zero rest energy of a photon means that the total energy would go to zero if you were able to accelerate into the photon rest frame. Energy that goes to zero when you accelerate into the rest frame is a defining property of kinetic energy. Another argument for why photon energy must be kinetic energy is to recognise that nonzero potential energy implies the potential to increase the speed of the particle, which is not possible for a photon that is already travelling at the speed of light.
-</p>
-
-<p>
-It seems intuitively plausible that the component of energy that drops off due to redshift as space expands is kinetic energy, although I have not found any confirmation of that so far. Any suggested references confirming or refuting this hypothesis would be <a href="contact.html">very welcome</a>. It is also worth noting that the masses of the protons and neutrons that dominate the baryonic contribution to matter are primarily due to the strong field contribution to potential energy, not the elementary particle rest masses, see the piece &ldquo;What fraction of a kg of potatoes is particle rest mass?&rdquo; for more details. In any case, it seems worthwhile to understand the fundamental principle and one could conceive of a scenario in which a particle had a very small rest mass, but still had a total energy dominated by potential energy. An example could be an electrically charged photon in a strong electromagnetic field in some non-abelian version of quantum electrodynamics. 
-</p>
-
-
-<ol>
-
-	<li style="line-height:150%"><a href=”https://www.uio.no/studier/emner/matnat/astro/nedlagte-emner/AST1100/h06/undervisningsmateriale/lecture-19.pdf”>Lecture notes 19: Nucleosynthesis Measuring Cosmological Parameters</a><br/>
-	V. H. Hansteen<br/>
-	University of Oslo AST1100 Lecture Notes, 31-Oct-2006 (Accessed 08-Jul-2023)
-	</li>
-
-</ol>
-
-
-</div>
-</div>
-</td></tr>
-
-
-
-<tr><td>
-<p id="inline">
-<b>Sources and further reading</b>
-</p>
-
-<p id="inline">
-<ul>
-    <li style="line-height:150%">Six not so easy pieces, 4<sup id="list">th</sup> Ed. (2011), Richard P. Feynman, 978-0465025268</li>
-    <li style="line-height:150%">Feynman Lectures on Gravitation (1999), Richard P. Feynman, 0140284508</li>
-    <li style="line-height:150%">The Road to Reality: A Complete Guide to the Laws of the Universe, 4<sup id="list">th</sup> Ed. (2007), Roger Penrose, 0224044478</li>
-    <li style="line-height:150%">The Ideas of Particle Physics, 4<sup id="list">th</sup> Ed. (2020), James Dodd and Ben Gripaios, 978-1108727402</li>
-</ul>
-
-</p>
-
-</td></tr>
 
 <tr>
 <td id="copyright">Copyright &copy; Jeffrey Philippson
